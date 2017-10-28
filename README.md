@@ -23,14 +23,14 @@ Web applications serving tens of thousands or more users were difficult to imple
 
 
 ### NoSQL types 
-	* Column Families: 
+* Column Families: 
 
 Advantages
 Most of the solutions, such as Apache Cassandra, HBase, and Google Datastore, allow adding columns over time without having to worry about filling in default values for the existing rows for the new columns. This gives flexibility in model and entity design allowing one to account for new columns in future for unforeseen scenarios and new requirements.
 
 There are advantages when working with a subset of the available columns. For example, computing maxima, minima, averages and sums, specifically on large datasets, is where these column-oriented data stores outshine in performance. Similarly, when new values are applied for either all rows at once or with same-column filters, these databases will allow partial data access without touching unrelated columns and be much faster in execution.
 
-	* Document Store
+* Document Store
 
 A document store allows the inserting, retrieving, and manipulating of semi-structured data. Most of the  databases available under this category use XML, JSON, with data access typically over HTTP protocol using RESTful API
 

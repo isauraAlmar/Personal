@@ -9,14 +9,18 @@
 
 
 #### Limitations of Relational Databases
-Nowadays the amount of data that is need to store and process has been encreasing in big quantities. The way of suporting large numbers of users from companyes like Google, Facebook, Amazon, etc. where much different than from supporting much smaller numbers of business users. The way to scale the amount of thata in the pass was by Scale up (pgraded with more CPUs, additional memory, or faster storage devices). Scaling up is allways a cost concernt, and you are always restric for the harware capacity. Another option is to use multiple servers but managing a relational DB using different servers incres the complexity and the dificulty
+Nowadays the amount of data that needs to store and the process has been increasing in big quantities. The way of supporting large numbers of users from companies like Google, Facebook, Amazon, etc. were much different than from supporting much smaller numbers of business users. The way to scale the amount of that in the pass was by Scale up (upgraded with more CPUs, additional memory, or faster storage devices). Scaling up is always a cost concern, and you always are restricted for the hardware capacity. Another option is to use multiple servers but managing a relational DB using different servers increase the complexity and the difficulty
 
-Web applications serving tens of thousandsor more users	were difficult	to implement with relational databases. Four haracteristics of data management systems that are particularly important for large-scale	data management tasks are:
+Web applications serving tens of thousands or more users were difficult to implement with relational databases. Four characteristics of data management systems that are particularly important for large-scale    data management tasks are:
 
 •Scalability
+
 •Cost
+
 •Flexibility
+
 •Availability
+
 
 ### NoSQL types 
 	* Column Families: 
@@ -98,11 +102,24 @@ Releases after graduation include:
 	* 
 
 ##### CAP Therorem
-	* Consistency
-	* Availability
-	* Partition Tolerance
 
+Also known as Brewer’s theorem states that distributed databases cannot have concistenci Availability and Partitiob Tolerance all at the ssame time.
 
+	* Consistency: consistent copies of data on different servers.
+	* Availability: refers	to providing a response	to any query
+	* Partition Tolerance: 	means if a network that connects two or	more data ase servers fails, the servers will still be	available with consistent data.
+
+##### ACID:	
+	*Atomicity: A unit that cannot be further divided.	
+	*Consistency: Ensure the integration of data.
+	*Isolation:
+	*Durability:
+	
+##### BASE:	
+	*Basically:	
+	*Available:	
+	*Soft State:
+	*Eventually Consistent:
 ### MongoDB
 ### ElasticSerch
 ### Elisandra = Elasticserch + Casandra

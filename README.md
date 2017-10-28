@@ -74,33 +74,7 @@ thereby allowing the schema to evolve over time with backward compatibilit
 	* Graph Databases
 
 	* Multimodel Databases
-
-## NoSQL Tecnologies
-
-###  Cassandra: Apache Cassandra is open source, distributed data storage system that differs sharply from relational database management systems.
-
-##### The History of Cassandra
-
-Cassandra first started as an incubation project at Apache in January of 2009. Shortly thereafter, the committers, led by Apache Cassandra Project Chair Jonathan Ellis, re-leased version 0.3 of Cassandra, and have steadily made minor releases since that time.
-
-Though as of this writing it has not yet reached a 1.0 release, Cassandra is being used in production by some of the biggest properties on the Web, including Facebook,Twitter, Cisco, Rackspace, Digg, Cloudkick, Reddit, and more.
-
-Releases after graduation include:
-
-    0.6, released Apr 12 2010, added support for integrated caching, and Apache Hadoop MapReduce
-    0.7, released Jan 08 2011, added secondary indexes and online schema changes
-    0.8, released Jun 2 2011, added the Cassandra Query Language (CQL), self-tuning memtables, and support for zero-downtime upgrades
-    1.0, released Oct 17 2011, added integrated compression, leveled compaction, and improved read performance
-    1.1, released Apr 23 2012, added self-tuning caches, row-level isolation, and support for mixed ssd/spinning disk deployments
-    1.2, released Jan 2 2013, added clustering across virtual nodes, inter-node communication, atomic batches, and request tracing
-    2.0, released Sep 4 2013, added lightweight transactions (based on the Paxos consensus protocol), triggers, improved compactions, CQL paging support, prepared statement support, SELECT column alias support
-
-
-
-##### Advantages
-
-	* 
-
+	
 ##### CAP Therorem
 
 Also known as Brewer’s theorem states that distributed databases cannot have concistenci Availability and Partitiob Tolerance all at the ssame time.
@@ -120,12 +94,51 @@ Also known as Brewer’s theorem states that distributed databases cannot have c
 	*Available:	
 	*Soft State:
 	*Eventually Consistent:
-### MongoDB
-### ElasticSerch
-### Elisandra = Elasticserch + Casandra
 
+## PROJECT DEVELOPMENT 
+### Tecnologies
 
+#### Cassandra:
+Apache Cassandra is open source, distributed data storage system that differs sharply from relational database management systems.
 
-### OrigenDB 
+##### The History of Cassandra
 
+Cassandra first started as an incubation project at Apache in January of 2009. Shortly thereafter, the committers, led by Apache Cassandra Project Chair Jonathan Ellis, re-leased version 0.3 of Cassandra, and have steadily made minor releases since that time.
+
+Though as of this writing it has not yet reached a 1.0 release, Cassandra is being used in production by some of the biggest properties on the Web, including Facebook,Twitter, Cisco, Rackspace, Digg, Cloudkick, Reddit, and more.
+
+Releases after graduation include:
+
+    0.6, released Apr 12 2010, added support for integrated caching, and Apache Hadoop MapReduce
+    0.7, released Jan 08 2011, added secondary indexes and online schema changes
+    0.8, released Jun 2 2011, added the Cassandra Query Language (CQL), self-tuning memtables, and support for zero-downtime upgrades
+    1.0, released Oct 17 2011, added integrated compression, leveled compaction, and improved read performance
+    1.1, released Apr 23 2012, added self-tuning caches, row-level isolation, and support for mixed ssd/spinning disk deployments
+    1.2, released Jan 2 2013, added clustering across virtual nodes, inter-node communication, atomic batches, and request tracing
+    2.0, released Sep 4 2013, added lightweight transactions (based on the Paxos consensus protocol), triggers, improved compactions, CQL paging support, prepared statement support, SELECT column alias support
+
+##### Why Cassandra
+
+#### ElasticSerch
+##### History
+##### Characteristics
+##### Why Elastic serch
+
+#### Docker
+##### History
+##### Characteristics
+##### Why Docker
+
+#### Elisandra = Elasticserch + Casandra
+##### History
+##### Characteristics
+##### Why Elassandra
+
+### Schedule
+
+A gantt diagram
+
+## Solution
+## Reflections
+## Conlutions
  

@@ -13,13 +13,13 @@ Nowadays the amount of data that needs to store and the process has been increas
 
 Web applications serving tens of thousands or more users were difficult to implement with relational databases. Four characteristics of data management systems that are particularly important for large-scale    data management tasks are:
 
-•Scalability
+* Scalability
 
-•Cost
+* Cost
 
-•Flexibility
+* Flexibility
 
-•Availability
+* Availability
 
 
 ### NoSQL types 
@@ -64,36 +64,35 @@ other words, the query is directly against the entire database. Note that the da
 allow for the creation of indexes (using common parameters or otherwise and evolve 
 over time).
 JSON-based stores are easy to define what I call 
-projections
-. Each top-level key 
+projections. Each top-level key 
 for the JSON object may be the entity's projection across other parts of the system 
 thereby allowing the schema to evolve over time with backward compatibilit
 
-	* Key Value
+* Key Value
 
-	* Graph Databases
+* Graph Databases
 
-	* Multimodel Databases
+* Multimodel Databases
 	
 ##### CAP Therorem
 
 Also known as Brewer’s theorem states that distributed databases cannot have concistenci Availability and Partitiob Tolerance all at the ssame time.
 
-	* Consistency: consistent copies of data on different servers.
-	* Availability: refers	to providing a response	to any query
-	* Partition Tolerance: 	means if a network that connects two or	more data ase servers fails, the servers will still be	available with consistent data.
+* Consistency: consistent copies of data on different servers.
+* Availability: refers	to providing a response	to any query
+* Partition Tolerance: 	means if a network that connects two or	more data ase servers fails, the servers will still be	available with consistent data.
 
 ##### ACID:	
-	*Atomicity: A unit that cannot be further divided.	
-	*Consistency: Ensure the integration of data.
-	*Isolation:
-	*Durability:
+*Atomicity: A unit that cannot be further divided.	
+*Consistency: Ensure the integration of data.
+*Isolation:
+*Durability:
 	
 ##### BASE:	
-	*Basically:	
-	*Available:	
-	*Soft State:
-	*Eventually Consistent:
+*Basically:	
+*Available:	
+*Soft State:
+*Eventually Consistent:
 
 ## PROJECT DEVELOPMENT 
 ### Tecnologies

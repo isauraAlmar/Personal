@@ -5,49 +5,41 @@
 ## INTRODUCTION
 ## THERORY
 
-### SQL vs NoSQL 
+### RELATIONAL vs NoSQL 
+
+
+#### Limitations of Relational Databases
+Nowadays the amount of data that is need to store and process has been encreasing in big quantities. The way of suporting large numbers of users from companyes like Google, Facebook, Amazon, etc. where much different than from supporting much smaller numbers of business users. The way to scale the amount of thata in the pass was by Scale up (pgraded with more CPUs, additional memory, or faster storage devices). Scaling up is allways a cost concernt, and you are always restric for the harware capacity. Another option is to use multiple servers but managing a relational DB using different servers incres the complexity and the dificulty
+
+Web applications serving tens of thousandsor more users	were difficult	to implement with relational databases. Four haracteristics of data management systems that are particularly important for large-scale	data management tasks are:
+
+•Scalability
+•Cost
+•Flexibility
+•Availability
 
 ### NoSQL types 
 	* Column Families: 
 
 Advantages
-Most of the solutions, such as Apache Cassandra, HBase, and Google Datastore, 
-allow adding columns over time 
-without having to worry about filling in default 
-values for the existing rows for the new columns. This gives flexibility in model 
-and entity design allowing one to account for new columns in future for unforeseen 
-scenarios and new requirements.
-There are advantages when working with a subset of the available columns. For 
-example, computing maxima, minima, averages and sums, specifically on large 
-datasets, is where these column-oriented data stores outshine in performance.
-Similarly, when new values are applied for either all rows at once or with same-
-column filters, these databases will allow partial data access without touching 
-unrelated columns and be much faster in execution.
+Most of the solutions, such as Apache Cassandra, HBase, and Google Datastore, allow adding columns over time without having to worry about filling in default values for the existing rows for the new columns. This gives flexibility in model and entity design allowing one to account for new columns in future for unforeseen scenarios and new requirements.
+
+There are advantages when working with a subset of the available columns. For example, computing maxima, minima, averages and sums, specifically on large datasets, is where these column-oriented data stores outshine in performance. Similarly, when new values are applied for either all rows at once or with same-column filters, these databases will allow partial data access without touching unrelated columns and be much faster in execution.
 
 	* Document Store
 
 A document store allows the inserting, retrieving, and manipulating of semi-structured data. Most of the  databases available under this category use XML, JSON, with data access typically over HTTP protocol using RESTful API
 
-Document-oriented databases provide this flexibility—dynamic or changeable 
-schema or even schemaless documents. Because of the limitless flexibility provided 
-in this model, this is one of the more popular models implemented and used.
-Some of popular databases that provide document-oriented storage include:
-• 
-MongoDB
-• 
-CouchDB
-• 
-Jackrabbit
-• 
-Lotus Notes
-• 
-Apache Cassandra
-• 
-Terrastore
-• 
-Redis
-• 
-BaseX
+Document-oriented databases provide this flexibility—dynamic or changeable schema or even schemaless documents. Because of the limitless flexibility provided in this model, this is one of the more popular models implemented and used. Some of popular databases that provide document-oriented storage include:
+• MongoDB
+• CouchDB
+• Jackrabbit
+• Lotus Notes
+• Apache Cassandra
+• Terrastore
+• Redis
+• BaseX
+
 Advantages
 The most prominent advantage, as evident in the preceding examples, is that 
 content is schemaless, or at best loosely defined. This is very useful in web-based 

@@ -35,13 +35,20 @@ There are advantages when working with a subset of the available columns. For ex
 A document store allows the inserting, retrieving, and manipulating of semi-structured data. Most of the  databases available under this category use XML, JSON, with data access typically over HTTP protocol using RESTful API
 
 Document-oriented databases provide this flexibility—dynamic or changeable schema or even schemaless documents. Because of the limitless flexibility provided in this model, this is one of the more popular models implemented and used. Some of popular databases that provide document-oriented storage include:
-• MongoDB
-• CouchDB
-• Jackrabbit
-• Lotus Notes
+* MongoDB
+
+* CouchDB
+
+* Jackrabbit
+
+* Lotus Notes
+
 • Apache Cassandra
+
 • Terrastore
+
 • Redis
+
 • BaseX
 
 Advantages
@@ -79,19 +86,28 @@ thereby allowing the schema to evolve over time with backward compatibilit
 Also known as Brewer’s theorem states that distributed databases cannot have concistenci Availability and Partitiob Tolerance all at the ssame time.
 
 * Consistency: consistent copies of data on different servers.
+
 * Availability: refers	to providing a response	to any query
+
 * Partition Tolerance: 	means if a network that connects two or	more data ase servers fails, the servers will still be	available with consistent data.
 
 ##### ACID:	
 *Atomicity: A unit that cannot be further divided.	
+
 *Consistency: Ensure the integration of data.
+
 *Isolation:
+
 *Durability:
 	
 ##### BASE:	
+
 *Basically:	
+
 *Available:	
+
 *Soft State:
+
 *Eventually Consistent:
 
 ## PROJECT DEVELOPMENT 
@@ -118,17 +134,47 @@ Releases after graduation include:
 
 ##### Why Cassandra
 
+* Is highly scalable
+
+* Write Speed: 
+
+* It provides high availability
+
+* Designed to manage very large amounts of structured data like logs.
+
+* It provides high availability
+
+* Peer-to-peer distribution model. 
+
+* The gossiper is a protocol communication (to support decentralization and partition tolerance) responsible for making sure every node in the system eventually knows important information about every other node's state, including those that are unreachable or not yet in the cluster when any given state change occurs. 
+
+* It have AntiEntropy,  it is a synchronization mechanisme that consist in comparing all the replicas of each piece of data that exist (or are supposed to) and updating each replica to the newest version. 
+
+* CQL (Cassandra Query Language), it is a subsed of SQL and its easy for someone coming from SQL to learn. 
+
+
 #### ElasticSerch
+Elasticsearch is a a distributed search engine base on RESTful, capable of solving a growing number of use cases. 
 ##### History
 ##### Characteristics
 ##### Why Elastic serch
+
+* SPEED: It is really fast. 
+
+* SCALABILITY: 
+
+* Resilient, Highly Available
+
+* CLIENT LIBRARYES: curl, java, c#, python, javascrip, perl, PHP, ruby
+
+* X-PACK: Extend Elasticsearch with Powerful pluguings like BigDesk, Head, HQ, Kopf, and Paramedic.
 
 #### Docker
 ##### History
 ##### Characteristics
 ##### Why Docker
 
-#### Elisandra = Elasticserch + Casandra
+	#### Elisandra = Elasticserch + Casandra
 ##### History
 ##### Characteristics
 ##### Why Elassandra

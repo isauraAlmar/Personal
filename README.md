@@ -156,7 +156,9 @@ Releases after graduation include:
 #### ElasticSerch
 Elasticsearch is a a distributed search engine base on RESTful, capable of solving a growing number of use cases. 
 ##### History
-##### Characteristics
+
+Elasticsearch had the first vertion realise created for Shay Banon in Febrary 2010. Shay Banon had a scalability isure with Compass and he decide to rewrite and used a common interface, JSON over HTTP, suitable for programming languages other than Java as well.
+
 ##### Why Elastic serch
 
 * SPEED: It is really fast. 

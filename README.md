@@ -3,6 +3,33 @@
 # Fial Project
 
 ## INTRODUCTION
+
+### About the company
+
+Everis an NTT DATA Company is a multinational consulting firm that offers business and strategic solutions, development and maintenance of technological applications and outsourcing services. The company, which operates in the telecommunications, financial, industrial, utilities, energy, public administrations and health sectors, reported 1.03 billion Euro in turnover last year. It currently employs 19,000 professionals at its offices and high performance centers in 16 countries.
+
+Everis NTT DATA:
+In October 1996 in Spain, a group of entrepreneurs you could count on the fingers of one hand left their managerial positions at a leading consulting company to create a new concept of consulting. The idea was simple to explain, yet complex to implement: build from scratch a unique company model designed to attract and retain the best talent, while fostering good people and collective values. Our talent management model, the main asset of Everis, is taught as a case study in leading business schools, as it excels in smartly feeding both the brain (skills and professional growth) and the heart (attitudes and values) of our employees. The result is summarized in our claim: attitude makes the difference.
+
+From early days in Spain, Everis has grown organically, in double digits. Currently, Everis pass from 5 employees back in 1996 to more than 16,000 across 16 countries and 4 continents.
+
+IMAGE OF NEXTGEN AREA
+
+ 
+ * Everis NEXT:
+ * Aumented workforce:
+ Artificial intelligence & Robotics:
+The main goal of the team at Everis is to integrate the robots into the society to generate a global benefit. Instead of focusing on the robot, the main goal of the company is the relation between human-robot in order to generate a smooth and friendly interaction. 
+
+We have two areas of actuation:
+Business (non-industrial) where through introducing robots in companies the workers will feel more comfortable. 
+Social focusing on using the robotics to improve the society. For example, people with disabilities, improve learning or robot partner.
+
+* CLOQQ
+
+* EVERIS INFINITE
+
+
 ## THERORY
 
 ### RELATIONAL vs NoSQL 

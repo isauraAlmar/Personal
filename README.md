@@ -220,6 +220,9 @@ Elasticsearch had the first vertion realise created for Shay Banon in Febrary 20
 
 
 #### Elisandra = Elasticserch + Casandra
+
+Elassandra is a fork of Elasticsearch modified to run as a plugin for Apache Cassandra in a scalable and resilient peer-to-peer architecture. Elasticsearch code is embedded in Cassanda nodes providing advanced search features on Cassandra tables and Cassandra serve as an Elasticsearch data and configuration store.
+
 ![alt text](https://github.com/isauraAlmar/Personal/blob/master/elassandraarchitecture.jpg)
 ##### History
 ##### Characteristics

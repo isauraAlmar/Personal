@@ -29,6 +29,7 @@ Social focusing on using the robotics to improve the society. For example, peopl
 
 * EVERIS INFINITE
 
+### Problem Definition
 
 ## THERORY
 
@@ -203,10 +204,21 @@ Elasticsearch had the first vertion realise created for Shay Banon in Febrary 20
 * X-PACK: Extend Elasticsearch with Powerful pluguings like BigDesk, Head, HQ, Kopf, and Paramedic.
 
 #### Docker
+
 ##### History
 ##### Characteristics
 ##### Why Docker
-https://github.com/isauraAlmar/Personal/blob/master/elassandraarchitecture.jpg
+
+* Portability: Everything required to run the application is packaged into a standardized container which means your applications are no longer restrained to certain infrastructure requirements. Applications can move across multiple environments, development stages, and cloud environments - consistently.
+
+* Incrise security: The Docker EE platform provides you with all the tools and capabilities you need to run containers securely at scale. With services like security scanning and container signing, Docker EE enables you to protect all app components from the source, across the network, and to different collaborators and environments with guarantees against tampering.
+
+* Efficiency: By containerizing your legacy application on Docker Enterprise Edition (EE), you reduce the total resource requirements to run your application. This increases operational efficiency and allows you to consolidate your infrastructure.
+
+
+
+
+
 #### Elisandra = Elasticserch + Casandra
 ![alt text](https://github.com/isauraAlmar/Personal/blob/master/elassandraarchitecture.jpg)
 ##### History

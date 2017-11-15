@@ -206,9 +206,9 @@ Elasticsearch had the first vertion realise created for Shay Banon in Febrary 20
 ##### History
 ##### Characteristics
 ##### Why Docker
-
+https://github.com/isauraAlmar/Personal/blob/master/elassandraarchitecture.jpg
 #### Elisandra = Elasticserch + Casandra
-![alt text][elassandraarchitecture.jpg]
+![alt text](https://github.com/isauraAlmar/Personal/blob/master/elassandraarchitecture.jpg)
 ##### History
 ##### Characteristics
 ##### Why Elassandra

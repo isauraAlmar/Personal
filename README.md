@@ -186,22 +186,48 @@ Releases after graduation include:
 
 
 #### ElasticSerch
-Elasticsearch is a a distributed search engine base on RESTful, capable of solving a growing number of use cases. 
+Elasticsearch is a a distributed search engine base on RESTful, capable of solving a growing number of use cases. It can be use as an analitic framework and datastore as well.
+
+INDEX: 
+
+INDEXING: Is the acction to recive a document and store/process in an index.
+
+SEARCHING: is the acction to retretive the data from the index.
+
+MAPPING
+
+* Mapping base types:
+* Mapping arrays
+* Mapping an object
+* Mapping a document
+
+...
+
+NODE:
+
+CLUSTER:
+
 ##### History
 
 Elasticsearch had the first vertion realise created for Shay Banon in Febrary 2010. Shay Banon had a scalability isure with Compass and he decide to rewrite and used a common interface, JSON over HTTP, suitable for programming languages other than Java as well.
 
-##### Why Elastic serch
+##### Why Elasticserch
+
+One of the advantages of Elasticsearch is that you can create a clienr made of any language as the answer is a JSON object. The main advantages of these protocl ar:
+
+* Protavility: It use web standars soc ic can be implementet in meny languages such as Java, Python, Ruby, c# etc, or called form comand lines applications such as curl.
+ * Durability:
+* Simple to use:
+* High suportet: Alot of plugings suoirts a REST endpoint on HTTP.
+* Scalability:
+
+Anothe good pont of elastic search is its comunity that ptovides official dtivers that suports the most use programming languages and powerful pluguings like BigDesk, Head, HQ, Kopf, and Paramedic.
 
 * SPEED: It is really fast. 
 
-* SCALABILITY: 
+* SCALABILITY: Is the same to talk to Elasticsearch running on a single node than hundred of them. It scales horizontally to handle kajillions of events per second, while automatically managing how indices and queries are distributed across the cluster for oh-so smooth operations.
 
 * Resilient, Highly Available
-
-* CLIENT LIBRARYES: curl, java, c#, python, javascrip, perl, PHP, ruby
-
-* X-PACK: Extend Elasticsearch with Powerful pluguings like BigDesk, Head, HQ, Kopf, and Paramedic.
 
 #### Docker
 

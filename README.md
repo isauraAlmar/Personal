@@ -50,7 +50,7 @@ Web applications serving tens of thousands or more users were difficult to imple
 * Availability
 
 
-### NoSQL types 
+#### NoSQL types 
 * Column Families: 
 
 Advantages
@@ -108,8 +108,9 @@ thereby allowing the schema to evolve over time with backward compatibilit
 * Graph Databases
 
 * Multimodel Databases
-
-##### Michroservices 
+### Architectura
+#### SOA
+#### Michroservices 
 
 ##### Container
 
@@ -267,6 +268,8 @@ An Elasticsearch index is mapped to a cassandra keyspace, and a document type to
 A gantt diagram
 
 ## Solution
+### Architecture dessing
+#### Desing for scalability
 
 ### Datastructure
 
@@ -285,6 +288,8 @@ A gantt diagram
 	"time_seen" : "",
 	"place_seen" : "",
 	}
+
+### Funcionality
 
 ## Reflections
 ## Conlutions

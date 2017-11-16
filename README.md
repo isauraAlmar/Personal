@@ -230,24 +230,6 @@ Elassandra is a fork of Elasticsearch modified to run as a plugin for Apache Cas
 
 ###### Benefits of Elassandra
 
-For Cassandra users, elassandra provides Elasticsearch features :
-* Cassandra update are indexed in Elasticsearch.
-* Full-text and spatial search on your Cassandra data.
-* Real-time aggregation (does not require Spark or Hadoop to GROUP BY)
-* Provide search on multiple keyspaces and tables in one query.
-* Provide automatic schema creation and support nested document using [User Defined Types](https://docs.datastax.com/en/cql/3.1/cql/cql_using/cqlUseUDT.html).
-* Provide a read/write JSON REST access to Cassandra data.
-* Numerous Elasticsearch plugins and products like [Kibana](https://www.elastic.co/guide/en/kibana/current/introduction.html).
-
-For Elasticsearch users, elassandra provides useful features :
-* Elassandra is masterless, cluster state is managed through a [cassandra lightweight transactions](http://www.datastax.com/dev/blog/lightweight-transactions-in-cassandra-2-0).
-* Elassandra is a sharded multi-master database, where Elasticsearch is sharded master-slave, Thus, Elassandra has no Single Point Of Write, helping to achieve high availability.
-* Elassandra inherits Cassandra data repair mechanisms (hinted handoff, read repair and nodetool repair) allowing to support cross datacenter replication.
-* When adding a node to an Elassandra cluster, only data pulled from existing nodes are re-indexed in Elasticsearch.
-* Cassandra could be your unique datastore for indexed and non-indexed data, it's easier to manage and secure. Source documents are now stored in Cassandra, reducing disk space if you need a NoSQL database and Elasticsearch.
-* Write operations are not more restricted to one primary shards, but distributed on all Cassandra nodes in a virtual datacenter. Number of shards does not limit your write throughput, just add some elassandra nodes to increase both read and write throughput.
-* Elasticsearch indices can be replicated between many Cassandra datacenters, allowing to write to the closest datacenter and search globally.
-* The [cassandra driver](http://www.planetcassandra.org/client-drivers-tools/) is Datacenter and Token aware, providing automatic load-balancing and failover.
 
 
 ### Schedule
@@ -255,6 +237,25 @@ For Elasticsearch users, elassandra provides useful features :
 A gantt diagram
 
 ## Solution
+
+### Datastructure
+
+	*{
+    "pid" : "", 	
+    "name" : {
+        "first_name" : "",
+        "last_name" : ""
+    },
+    "personal_info" : {
+        "age" : "",
+        "telephone" : "",
+        "email" : ""
+    },
+    "last_seen" : {
+	"time_seen" : "",
+	"place_seen" : "",
+	}
+
 ## Reflections
 ## Conlutions
  

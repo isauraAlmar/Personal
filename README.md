@@ -219,13 +219,11 @@ One of the advantages of Elasticsearch is that you can create a clienr made of a
  * Durability:
 * Simple to use:
 * High suportet: Alot of plugings suoirts a REST endpoint on HTTP.
-* Scalability:
+* Scalability:  Is the same to talk to Elasticsearch running on a single node than hundred of them. It scales horizontally to handle kajillions of events per second, while automatically managing how indices and queries are distributed across the cluster for oh-so smooth operations.
+* Speed:
 
 Anothe good pont of elastic search is its comunity that ptovides official dtivers that suports the most use programming languages and powerful pluguings like BigDesk, Head, HQ, Kopf, and Paramedic.
 
-* SPEED: It is really fast. 
-
-* SCALABILITY: Is the same to talk to Elasticsearch running on a single node than hundred of them. It scales horizontally to handle kajillions of events per second, while automatically managing how indices and queries are distributed across the cluster for oh-so smooth operations.
 
 * Resilient, Highly Available
 
@@ -250,9 +248,15 @@ Anothe good pont of elastic search is its comunity that ptovides official dtiver
 Elassandra is a fork of Elasticsearch modified to run as a plugin for Apache Cassandra in a scalable and resilient peer-to-peer architecture. Elasticsearch code is embedded in Cassanda nodes providing advanced search features on Cassandra tables and Cassandra serve as an Elasticsearch data and configuration store.
 
 ![alt text](https://github.com/isauraAlmar/Personal/blob/master/elassandraarchitecture.jpg)
+
+
+
+
 ##### History
 ##### Characteristics
 ##### Why Elassandra
+
+An Elasticsearch index is mapped to a cassandra keyspace, and a document type to a cassandra table.
 
 ###### Benefits of Elassandra
 

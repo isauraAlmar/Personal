@@ -280,19 +280,20 @@ A gantt diagram
 People table:
 
 	{
-    "pid" : "", 	
-    "name" : {
-        "first_name" : "",
-        "last_name" : ""
-    },
-    "personal_info" : {
-        "age" : "",
-        "telephone" : "",
-        "email" : ""
-    },
-    "last_seen" : {
-	"time_seen" : "",
-	"place_seen" : "",
+    		"pid" : "", 	
+    		"name" : {
+        		"first_name" : "",
+        		"last_name" : ""
+    		},
+    		"personal_info" : {
+        		"age" : "",
+        		"telephone" : "",
+        		"email" : ""
+    		},
+    		"last_seen" : {
+			"time_seen" : "",
+			"place_seen" : ""
+		}
 	}
 	
 Robot table:
@@ -310,6 +311,15 @@ Logs interaction table:
 
 	{
 		"id" : "",
+		"where" : "",
+			"network" : "",
+			"place" : ""
+		}
+		"when" : {
+			"time" : "",
+			"day" : ""
+		}
+	}
 
 ### Funcionality
 

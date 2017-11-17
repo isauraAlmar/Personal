@@ -31,7 +31,13 @@ Social focusing on using the robotics to improve the society. For example, peopl
 
 ### Problem Definition
 
-## THERORY
+## Analysis anr reserch
+
+### Introduction
+
+These section is about defaining the needs of the project leanring the theory that is need and rerech about witch tecnologies can be use and witch ones may work better.
+
+### Requisits
 
 ### RELATIONAL vs NoSQL 
 
@@ -144,6 +150,9 @@ Also known as Brewer’s theorem states that distributed databases cannot have c
 *Eventually Consistent:
 
 ## PROJECT DEVELOPMENT 
+
+### Introduction
+
 ### Tecnologies
 
 #### Cassandra:

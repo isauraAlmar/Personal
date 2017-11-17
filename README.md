@@ -271,9 +271,15 @@ A gantt diagram
 ### Architecture dessing
 #### Desing for scalability
 
-### Datastructure
 
-	*{
+### Datastructure
+![alt text](https://github.com/isauraAlmar/Personal/blob/master/cluster.png)
+
+![alt text](https://github.com/isauraAlmar/Personal/blob/master/know-node.png)
+
+People table:
+
+	{
     "pid" : "", 	
     "name" : {
         "first_name" : "",
@@ -288,6 +294,22 @@ A gantt diagram
 	"time_seen" : "",
 	"place_seen" : "",
 	}
+	
+Robot table:
+
+	{
+		"rId" : "",
+		"rType" : {
+			"name" : ""
+			"vertion" : ""
+		},
+		"rOuner" : ""
+	}
+
+Logs interaction table:
+
+	{
+		"id" : "",
 
 ### Funcionality
 

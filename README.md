@@ -1,6 +1,6 @@
 # 
 
-# Fial Project
+# Final Project
 
 ## INTRODUCTION
 
@@ -310,7 +310,7 @@ Robot table:
 	{
 		"rId" : "",
 		"rType" : {
-			"name" : ""
+			"name" : "",
 			"vertion" : ""
 		},
 		"rOuner" : ""
@@ -323,10 +323,12 @@ Logs interaction table:
 		"where" : "",
 			"network" : "",
 			"place" : ""
-		}
+		},
 		"when" : {
 			"time" : "",
 			"day" : ""
+		},
+		"info" : {
 		}
 	}
 

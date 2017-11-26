@@ -6,12 +6,94 @@
 
 ### About the company
 
-Everis an NTT DATA Company is a multinational consulting firm that offers business and strategic solutions, development and maintenance of technological applications and outsourcing services. The company, which operates in the telecommunications, financial, industrial, utilities, energy, public administrations and health sectors, reported 1.03 billion Euro in turnover last year. It currently employs 19,000 professionals at its offices and high performance centers in 16 countries.
+Everis an NTT DATA Company is a multinational consulting firm that offers business and strategic solutions, development and maintenance of technological applications and outsourcing services. The company, which operates in the telecommunications, financial, industrial, utilities, energy, public administrations and health sectors, has grown organically, in double digits and reported 1.03 billion Euro in turnover last year. It currently employs 19,000 professionals at its offices and high performance centers in 16 countries.
 
 Everis NTT DATA:
 In October 1996 in Spain, a group of entrepreneurs you could count on the fingers of one hand left their managerial positions at a leading consulting company to create a new concept of consulting. The idea was simple to explain, yet complex to implement: build from scratch a unique company model designed to attract and retain the best talent, while fostering good people and collective values. Our talent management model, the main asset of Everis, is taught as a case study in leading business schools, as it excels in smartly feeding both the brain (skills and professional growth) and the heart (attitudes and values) of our employees. The result is summarized in our claim: attitude makes the difference.
 
-From early days in Spain, Everis has grown organically, in double digits. Currently, Everis pass from 5 employees back in 1996 to more than 16,000 across 16 countries and 4 continents.
+What everis cand do for companyes:
+
+* Disruption, Why go far if you can go further: 
+
+Disruption, a word we continue to hear in the context of technology. Many industries are changing rapidly because of ongoing disruptive innovation. At everis we support our clients through this change. We help our clients to improve their business results by taking advantage of disruption and adding value through new ecosystems, service models and solutions.
+
+We have our innovation centre, NextGen, where we focus on the disruption of the business world as a result of advancing technologies. NextGen provides the next generation of technology through innovative and disruptive initiatives. We've designed the bank of the future, increased the value of employees with artificial intelligence, promoted technological education through creative technologies and bridged the gap between start-ups and large corporations.[https://www.everis.com/global/en/whatwedo/disruption]
+
+* Consulting,Successful Digital projects with everis
+
+everis consultancy helps companies excel by improving their day-to-day operations and management.
+
+
+Organisations need solutions that enable them to grow continuously. Our propositions align business objectives to the digital revolution. We enable companies in the 21st century to differentiate in an increasingly volatile market.
+
+
+Growth and Excellence are the strategies that define our business objectives in consultancy in the digital age. They include specialised services that provide real, flexible and sustainable solutions. [https://www.everis.com/global/en/whatwedo/consulting]
+
+
+* Transformation we define pragmatic and realistic initiatives, making transformation happen.
+
+Digital transformation is different for every company. everis knows the same change model cannot be applied to all companies; they each have different priorities and needs.
+
+We reinvent technology platforms to incorporate successful innovations, always with the end-customer in mind. We humanise the experience and create new processes that evolve the relationship with people and objects.
+
+
+PICTURE !!
+
+Our transformation models Conversion, Evolution and Revolution provide differential value by aligning organisations’ objectives with what they really want and need; this is about real transformation of products, services experiences and digital brands.
+
+everis is connected, we are ready to transform, to make things happen.
+https://www.everis.com/global/en/whatwedo/transformation
+
+* Technology, We provide the best technology and enterprise solutions to create new experiences.
+
+everis selects, implements and optimises the best technology and business solutions to accelerate the digital transformation process. We use our robust technological knowledge to create value and differentiate. Our work is supported by the best methods and tools.
+
+Data and digital experience are fundamental to digital transformation and are more than ever designed with the customer in mind. We identify the aspirations, needs and desires of customers to build efficient and sustainable digital products over time. We create interfaces that trigger emotions, emotions that lead to action and realise company goals.
+
+We design solid architectures which form the basis of our solutions. Scalable solutions which can adapt to future growth and ongoing changes, making use of other data sources and integrating these seamlessly.
+
+everis uses the best business solutions to optimise customer relations and internal processes, while maximising profits. We combine these solutions with the latest technology to provide the best solution for every business challenge: IoT, blockchain, and EPR are some examples of the disruptive technologies which everis uses to drive digital transformation.
+https://www.everis.com/global/en/whatwedo/technology
+
+* Operations, Delivering quality and efficient Managed Services
+
+Technology innovation continues to change the world we live in. At everis we embrace this change wholeheartedly and help our customers to transform and re-invent their business and technical solutions.
+
+We walk the walk hand in hand with our clients in their transformation journey, building long term trusted relationships and service delivery.
+
+To help our clients focus on their core business and strategic initiatives, everis offers Managed Services. We deliver and maximise business supporting functions (systems and IT related functions) through our innovative and efficient technology solutions.
+
+The everis Managed Services team provides services to all industry sectors. We often call on consultants with specific business knowledge from various sectors to get multiple perspectives on the challenge ahead. Our delivery model is based on our local expertise and high productivity centres and centres of excellence extended capabilities.
+https://www.everis.com/global/en/whatwedo/operations
+
+NextGen lives and breathes global digital transformation.
+
+ 
+
+From CAPEX to OPEX, cloud models and taking a strategic approach to production. From digital and legacy transformation, Blockchain, Big Data Analytics, AI and Robotics. We have the know-how, the attitude and drive to maximise our clients’ opportunities.
+
+
+The areas of actuation are:
+
+* Banking
+* Incurance
+* Telecom & Media 
+* Public sector
+* Utilities & Energy
+* Infraestructure & real-state
+* Consumer goods 
+* Logistic & transport
+* Life sciences
+* Health
+* Aerospace & defence
+* Automotive
+* Tourism
+* Distribution & retail
+* Services
+* Envairoment & sustainability
+* Manufacturing
+
+
 
 IMAGE OF NEXTGEN AREA
 
@@ -28,6 +110,7 @@ Social focusing on using the robotics to improve the society. For example, peopl
 * CLOQQ
 
 * EVERIS INFINITE
+
 
 ### Problem Definition
 

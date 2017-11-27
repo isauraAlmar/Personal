@@ -99,6 +99,7 @@ IMAGE OF NEXTGEN AREA
 
  
  * Everis NEXT:
+ 
  * Aumented workforce:
  Artificial intelligence & Robotics:
 The main goal of the team at Everis is to integrate the robots into the society to generate a global benefit. Instead of focusing on the robot, the main goal of the company is the relation between human-robot in order to generate a smooth and friendly interaction. 
@@ -107,9 +108,14 @@ We have two areas of actuation:
 Business (non-industrial) where through introducing robots in companies the workers will feel more comfortable. 
 Social focusing on using the robotics to improve the society. For example, people with disabilities, improve learning or robot partner.
 
-* CLOQQ
+* CLOQQ: Everis has launched CLOQQ, a social initiative where children can explore creative technologies, express their own ideas and better understand the world around them. At the same time, children will be able to develop skills to solve unexpected problems, work collaboratively and increase their self-confidence.
 
-* EVERIS INFINITE
+CLOQQ (acronym for "Crea Lo Que Quieras" in english "Create What You Want") offers both face-to-face activities (workshops, events, etc.) and a complete online and content environment for girls and boys to create their own video games, apps, robots, animations and much more . Watch video.
+
+https://www.everis.com/spain/es/news/newsroom/everis-lanza-cloqq-una-iniciativa-para-que-ninos-y-ninas-se-diviertan-aprendiendo-0
+
+* EVERIS INFINITE:  Everis Infinite is a free software application from the Office Suites & Tools subcategory, part of the Business category. The app is currently available in English and it was last updated on 2017-01-20. The program can be installed on iOS.
+https://everis-infinite-ios.soft112.com/
 
 
 ### Problem Definition

@@ -130,22 +130,34 @@ These section is about defaining the needs of the project leanring the theory th
 
 ### RELATIONAL vs NoSQL 
 
-
 #### Limitations of Relational Databases
-Nowadays the amount of data that needs to store and the process has been increasing in big quantities. The way of supporting large numbers of users from companies like Google, Facebook, Amazon, etc. were much different than from supporting much smaller numbers of business users. The way to scale the amount of that in the pass was by Scale up (upgraded with more CPUs, additional memory, or faster storage devices). Scaling up is always a cost concern, and you always are restricted for the hardware capacity. Another option is to use multiple servers but managing a relational DB using different servers increase the complexity and the difficulty
+Nowadays the amount of data that needs to store and the process has been increasing in big quantities,and with it new terms have come as "BIG DATA", "internet of things" or "Analitics. The way of supporting large numbers of users from companies like Google, Facebook, Amazon, etc. change the way of managing data than smaller numbers of business users. 
+
 
 Web applications serving tens of thousands or more users were difficult to implement with relational databases. Four characteristics of data management systems that are particularly important for large-scale    data management tasks are:
 
-* Scalability
-
-* Cost
-
-* Flexibility
-
-* Availability
+* Scalability: The way to scale the amount of that in the pass was by Scale up (upgraded with more CPUs, additional memory, or faster storage devices). Scaling up is always a cost concern, and you always are restricted for the hardware capacity. Another option is to use multiple servers but managing a relational DB using different servers increase the complexity and the difficulty.
 
 
-#### NoSQL types 
+* Cost: Upgrading with better hardward always have a huge impac of cost bea
+
+* Flexibility: 
+
+* Availability: Being able to quering is one of the big problems when you have milions of users accesisng the information at almost the same time from anywhere in the worl. Definaitly we need to enshure that the database have the way to enhure the datta when there is infraestructure problems, or system errors. With Relational Databases is not a easy problem to solve, it can become a very cmplicate problem when maximizes the availability is needed. 
+
+#### NoSQL 
+
+The idea of the NoSQL database is to solve the problems that the tipical relational database have. A good definition for a NoSQL is a variety of different database tecnologies that are being non-relational as we mantione before that is one of the problems that we are having with very larg amount of Data, it is also distributed meaning that ther can they can be vinculate to multiple processors. An other catacheristics of the NoSQL is that they have to be horizontally scalable, that means that we can increase the number of the nodes,  and not having to scale verticly, incrise the sise of the node.
+
+!!DRAW OF VERTICAL AN HORITZONTAL scaling.
+
+
+When we talck about big data we have 4 dimentions or the 4 V: Volume, Variety, Varacity and Velocity. (!!! EXPLAIN IT MORE)
+
+
+
+#### Types of NoSQL
+
 * Column Families: 
 
 Advantages
@@ -158,7 +170,18 @@ There are advantages when working with a subset of the available columns. For ex
 A document store allows the inserting, retrieving, and manipulating of semi-structured data. Most of the  databases available under this category use XML, JSON, with data access typically over HTTP protocol using RESTful API
 
 Document-oriented databases provide this flexibility—dynamic or changeable schema or even schemaless documents. Because of the limitless flexibility provided in this model, this is one of the more popular models implemented and used. Some of popular databases that provide document-oriented storage include:
-* MongoDB
+
+
+
+| Tecnology        |type            | Advantage     | disadvantages  |
+| ---------------- |:..............:|:-------------:| ---------------|
+| Apache Cassandra | colum store    | right-aligned | $1600          |
+| MongoDB          | document store |               |            $12 |
+| ArangoDB    	   | are neat       |               |             $1 |
+| Hadoop           | colum store    |               |                |
+| Couch DB         | document store |               |                |
+| Elastic          |                |  or Azure SQL Database             |                |
+
 
 * CouchDB
 
@@ -175,28 +198,18 @@ Document-oriented databases provide this flexibility—dynamic or changeable sch
 • BaseX
 
 Advantages
-The most prominent advantage, as evident in the preceding examples, is that 
-content is schemaless, or at best loosely defined. This is very useful in web-based 
-applications where there is a need for storing different types of content that may 
-evolve over time. For example, for a grocery store, information about the users, 
-inventory and orders can be stored as simple JSON or XML documents. Note that 
-"document store" is not the same as "blob store" where the data cannot be indexed.
-Based on the implementation, it may or may not be possible to retrieve or update a 
-record partially. If it is possible to do so, there is a great advantage. Note that stores 
-based on XML, BSON, JSON, and YAML would typically support this. XML-based 
-BaseX can be really powerful, while integrating multiple systems working with XML 
-given that it supports XQuery 3.0 and XSLT 2.0.
-Searching across multiple entity types is far more trivial compared to doing so in 
-traditional RDBMS or even in column-oriented databases. Because, now, there is no 
-concept of tables—which is essentially nothing more than a schema definition—one 
-can query across the records, irrespective of the underlying content or schema or in 
+The most prominent advantage, as evident in the preceding examples, is that content is schemaless, or at best loosely defined. This is very useful in web-based applications where there is a need for storing different types of content that may 
+evolve over time. For example, for a grocery store, information about the users, inventory and orders can be stored as simple JSON or XML documents. Note that "document store" is not the same as "blob store" where the data cannot be indexed.
+
+Based on the implementation, it may or may not be possible to retrieve or update a record partially. If it is possible to do so, there is a great advantage. Note that stores based on XML, BSON, JSON, and YAML would typically support this. XML-based 
+BaseX can be really powerful, while integrating multiple systems working with XML given that it supports XQuery 3.0 and XSLT 2.0.
+
+Searching across multiple entity types is far more trivial compared to doing so in traditional RDBMS or even in column-oriented databases. Because, now, there is no concept of tables—which is essentially nothing more than a schema definition—one can query across the records, irrespective of the underlying content or schema or in 
 other words, the query is directly against the entire database. Note that the databases 
 allow for the creation of indexes (using common parameters or otherwise and evolve 
 over time).
-JSON-based stores are easy to define what I call 
-projections. Each top-level key 
-for the JSON object may be the entity's projection across other parts of the system 
-thereby allowing the schema to evolve over time with backward compatibilit
+J
+SON-based stores are easy to define what I call projections. Each top-level key for the JSON object may be the entity's projection across other parts of the system thereby allowing the schema to evolve over time with backward compatibilit
 
 * Key Value
 
@@ -247,11 +260,13 @@ Also known as Brewer’s theorem states that distributed databases cannot have c
 #### Cassandra:
 Apache Cassandra is open source, distributed data storage system that differs sharply from relational database management systems.
 
+Cassandra is a NoSQL usin  Column Store model. 
+
 ##### The History of Cassandra
 
 Cassandra first started as an incubation project at Apache in January of 2009. Shortly thereafter, the committers, led by Apache Cassandra Project Chair Jonathan Ellis, re-leased version 0.3 of Cassandra, and have steadily made minor releases since that time.
 
-Though as of this writing it has not yet reached a 1.0 release, Cassandra is being used in production by some of the biggest properties on the Web, including Facebook,Twitter, Cisco, Rackspace, Digg, Cloudkick, Reddit, and more.
+Though as of this writing it has not yet reached a 1.0 release, Cassandra is being used in production by some of the biggest properties on the Web, including Facebook,Twitter, Cisco, Rackspace, Digg, Cloudkick, Reddit, and more. \[book]
 
 Releases after graduation include:
 
@@ -265,15 +280,13 @@ Releases after graduation include:
 
 ##### Why Cassandra
 
-* Is highly scalable
+* Scalability: In the system is very importat to desing for a scalability because the wroth plane is that we cpuld have like a milion robot in a year. So casandra is prepared to have a hight scalability performance. 
 
-* Write Speed: 
+* Write Speed: It is importan that when the system want to save new information it does fast because ther may be alot of information to save. One of the exemples that neds to be fast is when you save all the interaction infrmation as a log.
 
-* It provides high availability
+* It provides high availability: 
 
 * Designed to manage very large amounts of structured data like logs.
-
-* It provides high availability
 
 * Peer-to-peer distribution model. 
 

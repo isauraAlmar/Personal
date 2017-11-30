@@ -171,8 +171,8 @@ Document-oriented databases provide this flexibility—dynamic or changeable sch
 
 
 
-| Tecnology        |type            | Advantage                                | disadvantages                             |
-| ---------------- |:..............:|:----------------------------------------:| -----------------------------------------:|
+| Tecnology |type | Advantage | disadvantages  |
+| ---------------- |:---------------|:----------------------------------------:| -----------------------------------------:|
 | Apache Cassandra | colum store    | right-aligned                            | $1600                                     |
 | MongoDB          | document store |                          w               |            $12                            |
 | ArangoDB    	   | are neat       |                          w               |                                        $1 |

@@ -1,9 +1,3 @@
-# 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
 # Final Project
 
 ## INTRODUCTION
@@ -178,13 +172,13 @@ Document-oriented databases provide this flexibility—dynamic or changeable sch
 
 
 | Tecnology        |type            | Advantage                                | disadvantages                             |
-| ---------------- |:..............:|:----------------------------------------:| ------------------------------------------|
+| ---------------- |:..............:|:----------------------------------------:| -----------------------------------------:|
 | Apache Cassandra | colum store    | right-aligned                            | $1600                                     |
-| MongoDB          | document store |                                          |            $12                            |
-| ArangoDB    	   | are neat       |                                          |                                        $1 |
-| Hadoop           | colum store    |                                          |                                           |
-| Couch DB         | document store |                                          |                                           |
-| Elastic          |                |  or Azure SQL Database                   |                                           |
+| MongoDB          | document store |                          w               |            $12                            |
+| ArangoDB    	   | are neat       |                          w               |                                        $1 |
+| Hadoop           | colum store    |                          w               |                   w                       |
+| Couch DB         | document store |                         w                |                   w                       |
+| Elastic          |          w     |  or Azure SQL Database                   |                   w                       |
 
 
 * CouchDB

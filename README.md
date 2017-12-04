@@ -4,12 +4,11 @@
 
 ### About the company
 
-Everis an NTT DATA Company is a multinational consulting firm that offers business and strategic solutions, development and maintenance of technological applications and outsourcing services. The company, which operates in the telecommunications, financial, industrial, utilities, energy, public administrations and health sectors, has grown organically, in double digits and reported 1.03 billion Euro in turnover last year. It currently employs 19,000 professionals at its offices and high performance centers in 16 countries.
+Everis an NTT DATA Company is a multinational consulting firm that offers business and strategic solutions, development and maintenance of technological applications and outsourcing services. The company has grown organically, in double digits and reported 1.03 billion Euro in turnover last year. It currently employs 19,000 professionals at its offices and high performance centers in 16 countries.
 
-Everis NTT DATA:
-In October 1996 in Spain, a group of entrepreneurs you could count on the fingers of one hand left their managerial positions at a leading consulting company to create a new concept of consulting. The idea was simple to explain, yet complex to implement: build from scratch a unique company model designed to attract and retain the best talent, while fostering good people and collective values. Our talent management model, the main asset of Everis, is taught as a case study in leading business schools, as it excels in smartly feeding both the brain (skills and professional growth) and the heart (attitudes and values) of our employees. The result is summarized in our claim: attitude makes the difference.
+The companye starts on October 1996 in Spain,  when group of 5 entrepreneurs left their managerial positions at a leading consulting company to create a new concept of consulting. The idea was simple to explain, but complex to implement: build from scratch a unique company model designed to attract and retain the best talent, while fostering good people and collective values. Our talent management model, the main asset of Everis, is taught as a case study in leading business schools, as it excels in smartly feeding both the brain (skills and professional growth) and the heart (attitudes and values) of our employees. The result is summarized in our claim: attitude makes the difference.
 
-What everis cand do for companyes:
+What everis can do for companyes:
 
 * Disruption, Why go far if you can go further: 
 
@@ -92,6 +91,7 @@ The areas of actuation are:
 * Manufacturing
 
 
+### About the deparment 
 
 IMAGE OF NEXTGEN AREA
 
@@ -115,10 +115,28 @@ https://www.everis.com/spain/es/news/newsroom/everis-lanza-cloqq-una-iniciativa-
 * EVERIS INFINITE:  Everis Infinite is a free software application from the Office Suites & Tools subcategory, part of the Business category. The app is currently available in English and it was last updated on 2017-01-20. The program can be installed on iOS.
 https://everis-infinite-ios.soft112.com/
 
+### About the team
+
+Artificial intelligence & Robotics:
+The main goal of the team at Everis is to integrate the robots into the society to generate a global benefit. Instead of focusing on the robot, the main goal of the company is the relation between human-robot in order to generate a smooth and friendly interaction. 
+
+We have two areas of actuation:
+Business (non-industrial) where through introducing robots in companies the workers will feel more comfortable. 
+Social focusing on using the robotics to improve the society. For example, people with disabilities, improve learning or robot partner.
+
+Robots that the team works with:
+
+###### Pepper
+###### Jibo
+###### Tiago
+###### Nao
+###### Pleo and Casper project
+###### Sota
+
 
 ### Problem Definition
 
-## Analysis anr reserch
+## Analysis and reserch
 
 ### Introduction
 
@@ -131,11 +149,9 @@ These section is about defaining the needs of the project leanring the theory th
 #### Limitations of Relational Databases
 Nowadays the amount of data that needs to store and the process has been increasing in big quantities,and with it new terms have come as "BIG DATA", "internet of things" or "Analitics. The way of supporting large numbers of users from companies like Google, Facebook, Amazon, etc. change the way of managing data than smaller numbers of business users. 
 
-
 Web applications serving tens of thousands or more users were difficult to implement with relational databases. Four characteristics of data management systems that are particularly important for large-scale    data management tasks are:
 
 * Scalability: The way to scale the amount of that in the pass was by Scale up (upgraded with more CPUs, additional memory, or faster storage devices). Scaling up is always a cost concern, and you always are restricted for the hardware capacity. Another option is to use multiple servers but managing a relational DB using different servers increase the complexity and the difficulty.
-
 
 * Cost: Upgrading with better hardward always have a huge impac of cost bea
 

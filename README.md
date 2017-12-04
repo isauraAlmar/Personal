@@ -186,10 +186,6 @@ When we talck about big data we have 4 dimentions or the 4 V:
 
 * Column Families: 
 
-Advantages
-Most of the solutions, such as Apache Cassandra, HBase, and Google Datastore, allow adding columns over time without having to worry about filling in default values for the existing rows for the new columns. This gives flexibility in model and entity design allowing one to account for new columns in future for unforeseen scenarios and new requirements.
-
-There are advantages when working with a subset of the available columns. For example, computing maxima, minima, averages and sums, specifically on large datasets, is where these column-oriented data stores outshine in performance. Similarly, when new values are applied for either all rows at once or with same-column filters, these databases will allow partial data access without touching unrelated columns and be much faster in execution.
 
 * Document Store
 
@@ -197,19 +193,6 @@ A document store allows the inserting, retrieving, and manipulating of semi-stru
 
 Document-oriented databases provide this flexibility—dynamic or changeable schema or even schemaless documents. Because of the limitless flexibility provided in this model, this is one of the more popular models implemented and used. Some of popular databases that provide document-oriented storage include:
 
-Advantages
-The most prominent advantage, as evident in the preceding examples, is that content is schemaless, or at best loosely defined. This is very useful in web-based applications where there is a need for storing different types of content that may 
-evolve over time. For example, for a grocery store, information about the users, inventory and orders can be stored as simple JSON or XML documents. Note that "document store" is not the same as "blob store" where the data cannot be indexed.
-
-Based on the implementation, it may or may not be possible to retrieve or update a record partially. If it is possible to do so, there is a great advantage. Note that stores based on XML, BSON, JSON, and YAML would typically support this. XML-based 
-BaseX can be really powerful, while integrating multiple systems working with XML given that it supports XQuery 3.0 and XSLT 2.0.
-
-Searching across multiple entity types is far more trivial compared to doing so in traditional RDBMS or even in column-oriented databases. Because, now, there is no concept of tables—which is essentially nothing more than a schema definition—one can query across the records, irrespective of the underlying content or schema or in 
-other words, the query is directly against the entire database. Note that the databases 
-allow for the creation of indexes (using common parameters or otherwise and evolve 
-over time).
-J
-SON-based stores are easy to define what I call projections. Each top-level key for the JSON object may be the entity's projection across other parts of the system thereby allowing the schema to evolve over time with backward compatibilit
 
 * Key Value
 
@@ -221,18 +204,9 @@ It is good to implemeant these kind of database when you need to use many times 
 
 * Graph Databases
 
+* Colum base Database
+
 * Multimodel Databases
-
-
-| Tecnology |type | Advantage | disadvantages  |
-| ---------------- |:--------------------|:-----------------------------------:|:-----------------------------------:|
-| Apache Cassandra | colum store      | right-aligned                            | $1600                                     |
-| MongoDB          | document store |    w               |            $12                            |
-| ArangoDB    	   | Multimodel Database |                          w               |                    $1 |
-| Hadoop           | colum store    | It can manage multiple nodes acros different servers working in paralel. It is good to manage large numbers of unstructured data. It is fault tolerance| 
-Security: No data encription. Limitations at the time to improve efficiency, reliability and integration|
-| Couch DB         | document store |                         w                |                   w                       |
-| Elastic          |          w     |  or Azure SQL Database                   |                   w                       |
 
 
 ### Architectura
@@ -275,6 +249,17 @@ Also known as Brewer’s theorem states that distributed databases cannot have c
 ### Introduction
 
 ### Tecnologies
+
+Table of Database different tecnologyes and its advantages and disadvantages.
+| Tecnology |type | Advantage | disadvantages  |
+| ---------------- |:--------------------|:-----------------------------------:|:-----------------------------------:|
+| Apache Cassandra | colum store      | open sourse. Per to per archtecture. Squema free. | $1600                              |
+| MongoDB          | document store |    w               |            $12                            |
+| ArangoDB    	   | Multimodel Database |                          w               |                    $1 |
+| Hadoop           | colum store    |Open sourse It can manage multiple nodes acros different servers working in paralel. It is good to manage large numbers of unstructured data. It is fault tolerance | Security: No data encription. Limitations at the time to improve efficiency, reliability and integration|
+| Couch DB         | document store |                         w                |                   w                       |
+| Elastic          |          w     |  or Azure SQL Database                   |                   w                       |
+
 
 #### Cassandra:
 Apache Cassandra is open source, distributed data storage system that differs sharply from relational database management systems.

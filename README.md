@@ -127,6 +127,11 @@ Social focusing on using the robotics to improve the society. For example, peopl
 Robots that the team works with:
 
 ###### Pepper
+Pepper is a robot from aldevaran, a partnert of Soft Banck Group. It is a humanoide robot that is 1,20 tall, and it is creat to interact with it in diferent ways like having a talk interaction, thru his tablet, it have different sensors, etc.
+
+The team us the robot for 
+
+
 ###### Jibo
 ###### Tiago
 ###### Nao
@@ -161,13 +166,20 @@ Web applications serving tens of thousands or more users were difficult to imple
 
 #### NoSQL 
 
-The idea of the NoSQL database is to solve the problems that the tipical relational database have. A good definition for a NoSQL is a variety of different database tecnologies that are being non-relational as we mantione before that is one of the problems that we are having with very larg amount of Data, it is also distributed meaning that ther can they can be vinculate to multiple processors. An other catacheristics of the NoSQL is that they have to be horizontally scalable, that means that we can increase the number of the nodes,  and not having to scale verticly, incrise the sise of the node.
+The idea of the NoSQL database is to solve the problems that the tipical relational database have. A good definition for a NoSQL is a variety of different database tecnologies that are being non-relational as we mantione before that is one of the problems that we are having with very larg amount of Data, it is also distributed meaning that ther can they can be vinculate to multiple processors. An other catacheristics of the NoSQL is that they have to be horizontally scalable, that means that we can increase the number of the nodes, and not having to scale verticly, incrise the sise of the node.
 
 !!DRAW OF VERTICAL AN HORITZONTAL scaling.
 
 
-When we talck about big data we have 4 dimentions or the 4 V: Volume, Variety, Varacity and Velocity. (!!! EXPLAIN IT MORE)
+When we talck about big data we have 4 dimentions or the 4 V: 
 
+* Volume:
+
+* Variety:
+
+* Varacity:
+
+* Velocity:
 
 
 #### Types of NoSQL
@@ -185,32 +197,6 @@ A document store allows the inserting, retrieving, and manipulating of semi-stru
 
 Document-oriented databases provide this flexibility—dynamic or changeable schema or even schemaless documents. Because of the limitless flexibility provided in this model, this is one of the more popular models implemented and used. Some of popular databases that provide document-oriented storage include:
 
-
-
-| Tecnology |type | Advantage | disadvantages  |
-| ---------------- |:---------------|:----------------------------------------:| -----------------------------------------:|
-| Apache Cassandra | colum store    | right-aligned                            | $1600                                     |
-| MongoDB          | document store |                          w               |            $12                            |
-| ArangoDB    	   | are neat       |                          w               |                                        $1 |
-| Hadoop           | colum store    |                          w               |                   w                       |
-| Couch DB         | document store |                         w                |                   w                       |
-| Elastic          |          w     |  or Azure SQL Database                   |                   w                       |
-
-
-* CouchDB
-
-* Jackrabbit
-
-* Lotus Notes
-
-• Apache Cassandra
-
-• Terrastore
-
-• Redis
-
-• BaseX
-
 Advantages
 The most prominent advantage, as evident in the preceding examples, is that content is schemaless, or at best loosely defined. This is very useful in web-based applications where there is a need for storing different types of content that may 
 evolve over time. For example, for a grocery store, information about the users, inventory and orders can be stored as simple JSON or XML documents. Note that "document store" is not the same as "blob store" where the data cannot be indexed.
@@ -227,9 +213,28 @@ SON-based stores are easy to define what I call projections. Each top-level key 
 
 * Key Value
 
+When we talk about key value database we need to imagine an array that have constains on the keys and the values. That king of array is what we call associative array. The advantages that you can have on a key value database over an associative array is the percistance of the data especially in long tearm storage.
+
+The idea of a key value is to be able to the fast acces of the data, that is the reason why some key value stores only use memory to keep the data instead of saving it into the disck. 
+
+It is good to implemeant these kind of database when you need to use many times a data, so when we getit form the disck we s
+
 * Graph Databases
 
 * Multimodel Databases
+
+
+| Tecnology |type | Advantage | disadvantages  |
+| ---------------- |:--------------------|:-----------------------------------:|:-----------------------------------:|
+| Apache Cassandra | colum store    | right-aligned                            | $1600                                     |
+| MongoDB          | document store |    w               |            $12                            |
+| ArangoDB    	   | Multimodel Database |                          w               |                    $1 |
+| Hadoop           | colum store    |                 |  * Security
+							 * No encription of the datta|
+| Couch DB         | document store |                         w                |                   w                       |
+| Elastic          |          w     |  or Azure SQL Database                   |                   w                       |
+
+
 ### Architectura
 #### SOA
 #### Michroservices 
@@ -453,3 +458,7 @@ Logs interaction table:
 ## Reflections
 ## Conlutions
  
+##
+### Books
+### Webs
+http://blogs.mindsmapped.com/bigdatahadoop/hadoop-advantages-and-disadvantages/ (1/12/2017)

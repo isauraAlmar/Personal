@@ -229,7 +229,8 @@ It is good to implemeant these kind of database when you need to use many times 
 | Apache Cassandra | colum store      | right-aligned                            | $1600                                     |
 | MongoDB          | document store |    w               |            $12                            |
 | ArangoDB    	   | Multimodel Database |                          w               |                    $1 |
-| Hadoop           | colum store    |                 |   Security: No data encription. Limitations at the time to improve efficiency, reliability and integration|
+| Hadoop           | colum store    | It can manage multiple nodes acros different servers working in paralel. It is good to manage large numbers of unstructured data. It is fault tolerance| 
+Security: No data encription. Limitations at the time to improve efficiency, reliability and integration|
 | Couch DB         | document store |                         w                |                   w                       |
 | Elastic          |          w     |  or Azure SQL Database                   |                   w                       |
 

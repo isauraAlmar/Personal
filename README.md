@@ -251,21 +251,22 @@ Also known as Brewer’s theorem states that distributed databases cannot have c
 ### Tecnologies
 
 Table of Database different tecnologyes and its advantages and disadvantages.
+
 | Tecnology |type | Advantage | disadvantages  |
 | ---------------- |:--------------------|:-----------------------------------:|:-----------------------------------:|
-| Apache Cassandra | colum store      | open sourse. Per to per archtecture. Squema free. | $1600                              |
-| MongoDB          | document store |    w               |            $12                            |
+| Apache Cassandra | colum store      | open sourse. Per to per archtecture. Squema free. | $1600                    |
+| MongoDB          | document store |  Schema less |            $12                            |
 | ArangoDB    	   | Multimodel Database |                          w               |                    $1 |
 | Hadoop           | colum store    |Open sourse It can manage multiple nodes acros different servers working in paralel. It is good to manage large numbers of unstructured data. It is fault tolerance | Security: No data encription. Limitations at the time to improve efficiency, reliability and integration|
-| Couch DB         | document store |                         w                |                   w                       |
-| Elastic          |          w     |  or Azure SQL Database                   |                   w                       |
+| Couch DB         | document store |                         w                |                   w                      |
+| Elastic          |          w     |  or Azure SQL Database                   |                   w                      |
 
 
 #### Cassandra:
 Apache Cassandra is open source, distributed data storage system that differs sharply from relational database management systems.
 
 Cassandra is a NoSQL usin  Column Store model. 
-
+![alt text](https://github.com/isauraAlmar/Personal/blob/master/elassandraarchitecture.jpg)
 ##### The History of Cassandra
 
 Cassandra first started as an incubation project at Apache in January of 2009. Shortly thereafter, the committers, led by Apache Cassandra Project Chair Jonathan Ellis, re-leased version 0.3 of Cassandra, and have steadily made minor releases since that time.
@@ -446,4 +447,8 @@ Logs interaction table:
 ##
 ### Books
 ### Webs
-http://blogs.mindsmapped.com/bigdatahadoop/hadoop-advantages-and-disadvantages/ (1/12/2017)
+http://blogs.mindsmapped.com/bigdatahadoop/hadoop-advantages-and-disadvantages/ (1/10/2017)
+https://docs.mongodb.com/manual/ (1/10/2017)
+https://www.tutorialspoint.com/mongodb/mongodb_advantages.htm (20/11/2012)
+
+

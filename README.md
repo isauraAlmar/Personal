@@ -172,19 +172,23 @@ The idea of the NoSQL database is to solve the problems that the tipical relatio
 
 When we talck about big data we have 4 dimentions or the 4 V: 
 
-* Volume:
+* Volume: It refers the amount of data. We have many sources that the data can be generated form. For exemple: Logs, senors, social media, speeach, events, etc. 
 
-* Variety:
+* Variety: It refers the types of data that we can have. It can be structured, semy-structured or unstructured. The data can come from two main sources: people who create the data and or machines. I the case of the people it is going to be more structurate. And in the case of michins it depens.
 
-* Varacity:
+* Varacity: How truthly are the data. In some cases we can have untrusted data, for exemple if you have a node replicated many times and the data it is not concistent betwen them.
 
-* Velocity:
+* Velocity: The velocity that we need to process the data either the speed of genereting (and saving) the data and the reat of analisys. 
 
+https://bicorner.com/2015/06/25/characteristics-that-make-big-data-big/ (1/12/2017)
 
 #### Types of NoSQL
 
 * Column Families: 
 
+These type of Database are desing to manage big amount of data dstributed on multiple servers in a cluster. If you only have one server probably these type of data is not what you need.
+
+EXPLAIN HOW IT WORK
 
 * Document Store
 
@@ -199,14 +203,15 @@ When we talk about key value database we need to imagine an array that have cons
 
 The idea of a key value is to be able to the fast acces of the data, that is the reason why some key value stores only use memory to keep the data instead of saving it into the disck. 
 
-It is good to implemeant these kind of database when you need to use many times a data, so when we getit form the disck we s
+It is good to implemeant these kind of database when you need to use many times a data, so when we get it form the disck it save the data to the cache in order to acces it faster.
 
 * Graph Databases
 
-* Colum base Database
+Graph Databases as its name sutgest, is a database base on the mathematical element name graph. A graph consyst on two parts, vertices and edges, where a Vertices represents thinks (it can be any thing, cityes, animls, statuions, etc) that have relationships with other thinks. On the other hand edges are the links that contect vertices and represents its relationships. The relationships can be long or short tearm.
 
 * Multimodel Databases
 
+Some times one type of database it does not requierd all the characteristics of the system. Some times is good to combine the different models for a better performance. For exemple when a user logs into the system it might need to acces the data of the user many times, a good possibilitye for having better speed is to use a SQL database that needs to be done 
 
 ### Architectura
 #### SOA
@@ -247,6 +252,8 @@ Also known as Brewer’s theorem states that distributed databases cannot have c
 
 ### Introduction
 
+In these section It is descrive the reserch about wich tecnologies can be use to solve the database problem, and a comparation betwen them to find wich ones can be the best. It is also define the archtecture of the system and wich tecnologyes can be use to implement it. 
+
 ### Tecnologies
 
 Table of Database different tecnologyes and its advantages and disadvantages.
@@ -264,7 +271,8 @@ Table of Database different tecnologyes and its advantages and disadvantages.
 #### Cassandra:
 Apache Cassandra is open source, distributed data storage system that differs sharply from relational database management systems.
 
-Cassandra is a NoSQL usin  Column Store model. 
+Cassandra is a NoSQL usin Column Store model. It have a primary language call CQL (Cassandra Queri Langiuage) that is use for comunicating with the database. 
+
 ![alt text](https://github.com/isauraAlmar/Personal/blob/master/Screenshot from 2017-12-04 15-50-51.png)
 
 ##### The History of Cassandra
@@ -303,7 +311,15 @@ Releases after graduation include:
 
 
 #### ElasticSerch
-Elasticsearch is a a distributed search engine base on RESTful, capable of solving a growing number of use cases. It can be use as an analitic framework and datastore as well.
+
+Elasticsearch is a search engine base on RESTful, that have two main funtions: it can be use as an analitic framework and datastore as well.
+
+It can be use for seberal cases: 
+* As a Text Search.
+* Event Data and Metrics.
+* Visualizing Data.
+* Scraping and Combining Public Data.
+* Logging and Log Analysis.
 
 INDEX: 
 
@@ -324,6 +340,8 @@ NODE:
 
 CLUSTER:
 
+
+
 ##### History
 
 Elasticsearch had the first vertion realise created for Shay Banon in Febrary 2010. Shay Banon had a scalability isure with Compass and he decide to rewrite and used a common interface, JSON over HTTP, suitable for programming languages other than Java as well.
@@ -339,13 +357,15 @@ One of the advantages of Elasticsearch is that you can create a clienr made of a
 * Scalability:  Is the same to talk to Elasticsearch running on a single node than hundred of them. It scales horizontally to handle kajillions of events per second, while automatically managing how indices and queries are distributed across the cluster for oh-so smooth operations.
 * Speed:
 
-Anothe good pont of elastic search is its comunity that ptovides official dtivers that suports the most use programming languages and powerful pluguings like BigDesk, Head, HQ, Kopf, and Paramedic.
+
+There are several reasons for  use elasticsearch insted of other search engines. Firsth of all is because it have a big comunity that mantan and usit. That can be really usfull at the time to solve problems or learn how to use it. An other reason is because the comunity aport officeal rivers that suport the most use programming languages.
 
 
 * Resilient, Highly Available
 
 #### Docker
 
+Docker is a container tecnologie that is create
 ##### History
 ##### Characteristics
 ##### Why Docker
@@ -453,4 +473,4 @@ https://docs.mongodb.com/manual/ (1/10/2017)
 
 https://www.tutorialspoint.com/mongodb/mongodb_advantages.htm (20/11/2012)
 
-
+https://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/ (1/12/2017)

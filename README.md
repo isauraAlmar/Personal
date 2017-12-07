@@ -465,6 +465,24 @@ Logs interaction table:
   
 ## 
 ### Books 
+
+
+    author name
+    title of the publication (and the title of the article if it's a magazine or encyclopedia)
+    date of publication
+    the place of publication of a book
+    the publishing company of a book
+    the volume number of a magazine or printed encyclopedia
+    the page number(s)
+
+NoSQL for Mere Mortals by Dan Sullivan. Published by Addison-Wesley on April 2015,First printing. Text	printed	inthe	United	States	on recycled paper at Edwards Brothers Malloy, Ann Arbor, Michigan.
+
+Cassandra: The Definitive Guide, by Eben Hewitt, Published by O’Reilly Media on November 2010, First Edition.
+
+Kafka: The Definitive Guide, Real-Time Data and Stream Processing at Scale, by Neha Narkhede, Gwen Shapira, and Todd Palino. Published by O’Reilly Media on July 2017: First Edition.
+
+
+The OpenCV Tutorials, Release 2.4.13.3, September 03, 2017
 ### Webs 
 http://blogs.mindsmapped.com/bigdatahadoop/hadoop-advantages-and-disadvantages/ (1/10/2017) 
   
@@ -473,4 +491,22 @@ https://docs.mongodb.com/manual/ (1/10/2017)
 https://www.tutorialspoint.com/mongodb/mongodb_advantages.htm (20/11/2012) 
   
 https://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/ (1/12/2017) 
+
+https://www.rosehosting.com/blog/how-to-install-apache-cassandra-on-ubuntu-16-04/ (23/10/2017)
+
+https://docs.datastax.com/en/cql/3.1/cql/cql_intro_c.html (17/10/2017)
+
+##### Elisandra: Elasticsearch + Cassandra 
+http://doc.elassandra.io/en/latest/installation.html
+
+https://github.com/strapdata/elassandra
+
+https://www.youtube.com/watch?v=0WuLZTvA3YM
+
+Elasticsearch
+
+https://www.elastic.co/ (17/10/2017)
+
+https://www.3pillarglobal.com/insights/advantages-of-elastic-search (25/10/2017)
+
  

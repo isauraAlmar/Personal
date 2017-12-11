@@ -271,6 +271,11 @@ Releases after graduation include:
 * It use CQL (Cassandra Query Language), it is a subset of SQL and its easy for someone coming from SQL to learn.  
 ##### Requierments
 
+* minimum 2 cores, recomended 8 or more cores.
+* minimum 8GB of RAM, recomended 32GB of RAM.
+* Java 8
+* Python 2.7
+
 #### Elasticsearch 
   
 Elasticsearch is a search engine base on RESTful, that have two main functions: it can be used as an analytic framework and datastore as well. 
@@ -313,6 +318,8 @@ One of the advantages of Elasticsearch is that you can create a client made of a
 * Resilient, Highly Available 
 
 ##### Requierments
+ * Java 8
+ * curl
  
 #### Elisandra = Elasticserch + Casandra 
   
@@ -337,7 +344,8 @@ https://github.com/strapdata/elassandra
 
 ##### Requierments
 * Java 8
-* 
+
+
 ### Tecnologies for the architecture
 
 #### Docker 
@@ -353,10 +361,19 @@ Docker is a container technology that is create
 * Efficiency: By containerizing your legacy application on Docker Enterprise Edition (EE), you reduce the total resource requirements to run your application. This increases operational efficiency and allows you to consolidate your infrastructure. 
 
 * Enterprise vertion (EE) and comunity vertion (CE)
+##### Requierments
+* Aveilable for: Mac, Windos, Devian, Ubuntu, Centos, azure and AWS.
+
+Depending of the OS. To install Docker CE in Ubuntu, you 
+
+* 64-bit version o
+* Ubuntu versions: Artful 17.10 (Docker CE 17.11 Edge only), Zesty 17.04, Xenial 16.04 (LTS), Trusty 14.04 (LTS), 
+* Ubuntu on x86_64, armhf, and s390x (IBM z Systems) architectures. 
 
 #### Kafka
 ##### History  
 ##### Why kafka
+##### Requierments
 * Need to have ZooKeepe install and started.
 * For ZooKeepe it is need:
 	Supported Platforms
@@ -515,6 +532,8 @@ DB
 SW
 
 HW
+
+OS
 
 
 

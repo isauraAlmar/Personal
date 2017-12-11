@@ -281,31 +281,10 @@ It can be used for several cases:
 * Scraping and Combining Public Data. 
 * Logging and Log Analysis. 
   
-INDEX:  
-  
-INDEXING: Is the action to receive a document and store/process in an index. 
-  
-SEARCHING: is the action to retrieve the data from the index. 
-  
-MAPPING 
-  
-* Mapping base types: 
-* Mapping arrays 
-* Mapping an object 
-* Mapping a document 
-  
-... 
-  
-NODE: 
-  
-CLUSTER: 
-  
-  
-  
 ##### History 
   
 Elasticsearch had the first version released  for Shay Banon in Febrary 2010. Shay Banon had a scalability issue with Compass and he decide to rewrite and used a common interface, JSON over HTTP, suitable for programming languages other than Java as well. 
-  
+
 ##### Why Elasticsearch 
   
 One of the advantages of Elasticsearch is that you can create a client made of any language as the answer is a JSON object. The main advantages of these protocol are: 
@@ -313,9 +292,10 @@ One of the advantages of Elasticsearch is that you can create a client made of a
 * Portability: It use web standards so it can be implemented in many languages such as Java, Python, Ruby, c#, etc., or called form command lines applications such as curl. 
 * Durability: 
 * Simple to use: 
+* Speed: It can copute complext queris in a short amount of time. 
 * High support: Alot of plugins uses a REST endpoint on HTTP. 
 * Scalability:  Is the same to talk to Elasticsearch running on a single node than hundreds of them. It scales horizontally to handle billions of events per second, while automatically managing how indices and queries are distributed across the cluster for oh-so smooth operations. 
-* Speed: 
+* Security: Elasticsearch out of the box it does not have than hight up secutity control. It use HTTP autentification. But as I mention before there are lots of plougings, for exemple SearchGuard is a free pluging that you can find role based access control, document level security and SSL/TLS encrypted node-to-node communication. You can also find other plugings for security. 
   
   
 There are several reasons for use Elasticsearch instead of other search engines. First of all is because it has a big community that maintain and use it. That can be really useful at the time to solve problems or learn how to use it. Another reason is because the community apart official rivers that support the most use programming languages. 
@@ -464,6 +444,7 @@ https://www.youtube.com/watch?v=0WuLZTvA3YM (2/11/2017)
 https://www.elastic.co/ (17/10/2017)
 
 https://www.3pillarglobal.com/insights/advantages-of-elastic-search (25/10/2017)
+https://apiumhub.com/tech-blog-barcelona/elastic-search-advantages-books/ (11/12/2017)
 
 ##### Cassandra
 
@@ -473,4 +454,33 @@ https://docs.datastax.com/en/cql/3.1/index.html (17/10/2017)
 
 https://kafka.apache.org/documentation/ (10/12/2017)
 
- 
+## Apendex
+
+### Basic concepts
+Cluster: 
+
+Node:
+
+Index: 
+
+Type: 
+
+Document:
+
+Shards and Replicas: 
+
+* Container
+*
+### Abrebiations
+
+NoSQL
+
+DB
+
+SW
+
+HW
+
+
+
+

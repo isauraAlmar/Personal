@@ -76,7 +76,10 @@ Pepper is a robot from Aldevaran, a partner of Soft Bank Group. It is a humanoid
 ### Problem Definition
 Robotics found that some of the robots do not have a significant computing power that is a problem when you need to have a few different processes running at the same time, especially when those processes have a big amount of data like processes that use image processing or machine learning. (CONECTOR) there exist robots that can handle high processing costs, but they usually are very expensive. 
 
-That is why the team had the idea about creating a server where the robot will connect to it and send information about the state of the sensors and actuators. The server will compute them and send the data to the robot about what they have to do. Furthermore, if you pout that server in “the cloud”, you can connect the robots and connect any robot from everywhere, with the only requirement of having internet access. Also if you have different robots connect to the cloud, you have the possibility of shearing the knowledge between robots. A here is where this project comes. The idea is to create a proof of concept of a system where tow robots that connect to it can share information.
+That is why the team had the idea about creating a server where the robot will connect to it and send information about the state of the sensors and actuators. The server will compute them and send the data to the robot about what they have to do. Furthermore, if you pout that server in “the cloud”, you can connect the robots and connect any robot from everywhere, with the only requirement of having internet access. Also if you have different robots connect to the cloud, you have the possibility of shearing the knowledge between robots. A here is where this project comes. The idea is to create a proof of concept of a system where tow robots that connect to it can share informatiom.
+
+Imagine that a girl call Lisa, entre into a store for the fith time. At the entrence she meet a robot and the 
+
 
 
 ## Analysis and reserch

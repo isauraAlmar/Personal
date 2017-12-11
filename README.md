@@ -78,17 +78,21 @@ Robotics found that some of the robots do not have a significant computing power
 
 That is why the team had the idea about creating a server where the robot will connect to it and send information about the state of the sensors and actuators. The server will compute them and send the data to the robot about what they have to do. Furthermore, if you pout that server in “the cloud”, you can connect the robots and connect any robot from everywhere, with the only requirement of having internet access. Also if you have different robots connect to the cloud, you have the possibility of shearing the knowledge between robots. A here is where this project comes. The idea is to create a proof of concept of a system where tow robots that connect to it can share informatiom.
 
-Imagine that a girl call Lisa, entre into a store for the fith time. At the entrence she meet a robot and the 
+Imagine that a girl calls Lisa, entre into a store for the first time. At the entrance, she meets a robot, and the robot learns ho she is. Another day Lisa go to another store with the same company as before that is located in another city. There is also a robot, and it already knows who Lisa is, them interests last time, and a record of what she pushes in the past.
+
+The previous example shows in big words what the system is going to be able to do.
 
 
+### Requisits 
+
+The system needs to be prepare for scalability in tow ways:
+
+* The fist one
+* The second one
 
 ## Analysis and reserch
 
-### Introduction
-
 These section is about defining the needs of the project learning the theory that is needed and research about witch technologies can be use and which ones may work better. 
-
-### Requisits ???
 
 ### RELATIONAL vs NoSQL 
 

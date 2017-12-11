@@ -503,10 +503,18 @@ https://github.com/strapdata/elassandra
 
 https://www.youtube.com/watch?v=0WuLZTvA3YM
 
-Elasticsearch
+##### Elasticsearch
 
 https://www.elastic.co/ (17/10/2017)
 
 https://www.3pillarglobal.com/insights/advantages-of-elastic-search (25/10/2017)
+
+##### Cassandra
+
+https://docs.datastax.com/en/cql/3.1/index.html (17/10/2017)
+
+##### Kafka
+
+https://kafka.apache.org/documentation/ (10/12/2017)
 
  

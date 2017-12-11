@@ -269,7 +269,8 @@ Releases after graduation include:
 * It have AntiEntropy,  it is a synchronization mechanism that consist in comparing all the replicas of each piece of data that exist (or are supposed to) and updating each replica to the newest version.  
   
 * It use CQL (Cassandra Query Language), it is a subset of SQL and its easy for someone coming from SQL to learn.  
-    
+##### Requierments
+
 #### Elasticsearch 
   
 Elasticsearch is a search engine base on RESTful, that have two main functions: it can be used as an analytic framework and datastore as well. 
@@ -281,6 +282,9 @@ It can be used for several cases:
 * Scraping and Combining Public Data. 
 * Logging and Log Analysis. 
   
+  
+  (HERE I HAVE TO EXPLAIN THAT IS DOCUMENT BASE)
+  
 ##### History 
   
 Elasticsearch had the first version released  for Shay Banon in Febrary 2010. Shay Banon had a scalability issue with Compass and he decide to rewrite and used a common interface, JSON over HTTP, suitable for programming languages other than Java as well. 
@@ -290,34 +294,50 @@ Elasticsearch had the first version released  for Shay Banon in Febrary 2010. Sh
 One of the advantages of Elasticsearch is that you can create a client made of any language as the answer is a JSON object. The main advantages of these protocol are: 
   
 * Portability: It use web standards so it can be implemented in many languages such as Java, Python, Ruby, c#, etc., or called form command lines applications such as curl. 
+
 * Durability: 
+
 * Simple to use: 
+
 * Speed: It can copute complext queris in a short amount of time. 
+
 * High support: Alot of plugins uses a REST endpoint on HTTP. 
+
 * Scalability:  Is the same to talk to Elasticsearch running on a single node than hundreds of them. It scales horizontally to handle billions of events per second, while automatically managing how indices and queries are distributed across the cluster for oh-so smooth operations. 
+
 * Security: Elasticsearch out of the box it does not have than hight up secutity control. It use HTTP autentification. But as I mention before there are lots of plougings, for exemple SearchGuard is a free pluging that you can find role based access control, document level security and SSL/TLS encrypted node-to-node communication. You can also find other plugings for security. 
   
-  
-There are several reasons for use Elasticsearch instead of other search engines. First of all is because it has a big community that maintain and use it. That can be really useful at the time to solve problems or learn how to use it. Another reason is because the community apart official rivers that support the most use programming languages. 
+* It has a big community that maintain and use it. That can be really useful at the time to solve problems or learn how to use it. Another reason is because the community apart official rivers that support the most use programming languages. 
   
   
 * Resilient, Highly Available 
-  
+
+##### Requierments
  
- #### Elisandra = Elasticserch + Casandra 
+#### Elisandra = Elasticserch + Casandra 
   
-Elassandra is a fork of Elasticsearch modified to run as a plugin for Apache Cassandra in a scalable and resilient peer-to-peer architecture. Elasticsearch code is embedded in Cassanda nodes providing advanced search features on Cassandra tables and Cassandra serve as an Elasticsearch data and configuration store. 
+"Elassandra is a fork of Elasticsearch modified to run as a plugin for Apache Cassandra in a scalable and resilient peer-to-peer architecture. Elasticsearch code is embedded in Cassanda nodes providing advanced search features on Cassandra tables and Cassandra serve as an Elasticsearch data and configuration store. "
+
+https://github.com/strapdata/elassandra
   
 ![alt text](https://github.com/isauraAlmar/Personal/blob/master/elassandraarchitecture.jpg) 
+  https://github.com/strapdata/elassandra
   
 ##### History 
 ##### Characteristics 
 ##### Why Elassandra 
 
-* It have an enterprise vertion
+* It have an enterprise vertion, Strapdata
 * An Elasticsearch index is mapped to a cassandra keyspace, and a document type to a cassandra table. 
-* Doker  
+* Docker
+* Durability
+* CQL: is it possible to nable CQL queris.
+* It is possible to use the pluguisn of the elastic search.
+* Definetly it have the advantages of elsaticsearch and cassandrea all togehter.
 
+##### Requierments
+* Java 8
+* 
 ### Tecnologies for the architecture
 
 #### Docker 

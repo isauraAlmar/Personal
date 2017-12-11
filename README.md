@@ -1,6 +1,7 @@
 # Final Project
 
 ## INTRODUCTION
+This section is an introduction to talk about the company ye, what they are doing. The team and the innovation area where I had been collaborating. Moreover, I will talk about the needs that they have and how can my project help them.
 
 ### About the company
 
@@ -12,84 +13,19 @@ What Everis can do for companies:
 
 * Disruption, why go far if you can go further 
 
-Disruption, a word we continue to hear in the context of technology. Many industries are changing rapidly because of ongoing disruptive innovation. At Everis we support our clients through this change. We help our clients to improve their business results by taking advantage of disruption and adding value through new ecosystems, service models and solutions. 
-
-We have our innovation center, NextGen, where we focus on the disruption of the business world as a result of advancing technologies. NextGen provides the next generation of technology through innovative and disruptive initiatives. We've designed the bank of the future, increased the value of employees with artificial intelligence, promoted technological education through creative technologies and bridged the gap between start-ups and large corporations. [https://www.everis.com/global/en/whatwedo/disruption] 
-
 * Consulting, successful Digital projects with Everis 
-
-Everis consultancy helps companies excel by improving their day-to-day operations and management.
-
-
-Organizations need solutions that enable them to grow continuously. Our propositions align business objectives to the digital revolution. We enable companies in the 21st century to differentiate in an increasingly volatile market. 
-
-
-Growth and Excellence are the strategies that define our business objectives in consultancy in the digital age. They include specialized services that provide real, flexible and sustainable solutions. [https://www.everis.com/global/en/whatwedo/consulting] 
-
 
 * Transformation we define pragmatic and realistic initiatives, making transformation happen.
 
-Digital transformation is different for every company. Everis knows the same change model cannot be applied to all companies; they each have different priorities and needs. 
-
-We reinvent technology platforms to incorporate successful innovations, always with the end-customer in mind. We humanize the experience and create new processes that evolve the relationship with people and objects. 
-
-
-PICTURE !!
-
-Our transformation models Conversion, Evolution and Revolution provide differential value by aligning organizations' objectives with what they really want and need; this is about real transformation of products, services experiences and digital brands. 
-  
-Everis is connected, we are ready to transform, to make things happen. 
-https://www.everis.com/global/en/whatwedo/transformation 
-  
-* Technology, we provide the best technology and enterprise solutions to create new experiences. 
-  
-Everis selects, implements and optimizes the best technology and business solutions to accelerate the digital transformation process. We use our robust technological knowledge to create value and differentiate. Our work is supported by the best methods and tools. 
-  
-Data and digital experience are fundamental to digital transformation and are more than ever designed with the customer in mind. We identify the aspirations, needs and desires of customers to build efficient and sustainable digital products over time. We create interfaces that trigger emotions, emotions that lead to action and realize company goals. 
-  
-We design solid architectures which form the basis of our solutions. Scalable solutions which can adapt to future growth and ongoing changes, making use of other data sources and integrating these seamlessly. 
-  
-Everis uses the best business solutions to optimize customer relations and internal processes, while maximizing profits. We combine these solutions with the latest technology to provide the best solution for every business challenge: IoT, blockchain, and EPR are some examples of the disruptive technologies which Everis uses to drive digital transformation. 
-https://www.everis.com/global/en/whatwedo/technology 
- 
+* Technology, we provide the best technology and enterprise solutions to create new experiences.
 
 * Operations, Delivering quality and efficient Managed Services 
-  
-Technology innovation continues to change the world we live in. At Everis we embrace this change wholeheartedly and help our customers to transform and re-invent their business and technical solutions. 
-  
-We walk the walk hand in hand with our clients in their transformation journey, building long term trusted relationships and service delivery. 
-  
-To help our clients focus on their core business and strategic initiatives, Everis offers Managed Services. We deliver and maximize business supporting functions (systems and IT related functions) through our innovative and efficient technology solutions. 
-  
-The Everis Managed Services team provides services to all industry sectors. We often call on consultants with specific business knowledge from various sectors to get multiple perspectives on the challenge ahead. Our delivery model is based on our local expertise and high productivity centers and centers of excellence extended capabilities. 
-https://www.everis.com/global/en/whatwedo/operations 
+
   
 NextGen lives and breathes global digital transformation. 
   
-  
-  
 From CAPEX to OPEX, cloud models and taking a strategic approach to production. From digital and legacy transformation, Blockchain, Big Data Analytics, AI and Robotics. We have the know-how, the attitude and drive to maximize our clients’ opportunities. 
 
-
-The areas of actuation are:
-
-* Banking 
-* Insurance 
-* Telecom & Media  
-* Public sector 
-* Utilities & Energy 
-* Infrastructure & real-state 
-* Consumer goods  
-* Logistic & transport 
-* Life sciences 
-* Health 
-* Aerospace & defense 
-* Automotive 
-* Tourism 
-* Distribution & retail 
-* Services 
-* Environment & sustainability 
-* Manufacturing 
 
 
 ### About the deparment 
@@ -128,8 +64,6 @@ Robots that the team works with:
 
 ###### Pepper
 Pepper is a robot from Aldevaran, a partner of Soft Bank Group. It is a humanoid robot that is 1,20 meters tall, and it is created to interact with it in different ways like having a vocal interaction, through its tablet, it has different sensors, etc. 
-  
-The team uses the robot for  
 
 
 ###### Jibo
@@ -140,6 +74,10 @@ The team uses the robot for
 
 
 ### Problem Definition
+Robotics found that some of the robots do not have a significant computing power that is a problem when you need to have a few different processes running at the same time, especially when those processes have a big amount of data like processes that use image processing or machine learning. (CONECTOR) there exist robots that can handle high processing costs, but they usually are very expensive. 
+
+That is why the team had the idea about creating a server where the robot will connect to it and send information about the state of the sensors and actuators. The server will compute them and send the data to the robot about what they have to do. Furthermore, if you pout that server in “the cloud”, you can connect the robots and connect any robot from everywhere, with the only requirement of having internet access. Also if you have different robots connect to the cloud, you have the possibility of shearing the knowledge between robots. A here is where this project comes. The idea is to create a proof of concept of a system where tow robots that connect to it can share information.
+
 
 ## Analysis and reserch
 

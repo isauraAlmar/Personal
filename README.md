@@ -352,7 +352,21 @@ Docker is a container technology that is create
   
 * Efficiency: By containerizing your legacy application on Docker Enterprise Edition (EE), you reduce the total resource requirements to run your application. This increases operational efficiency and allows you to consolidate your infrastructure. 
 
-* Enterprise vertion
+* Enterprise vertion (EE) and comunity vertion (CE)
+
+#### Kafka
+##### History  
+##### Why kafka
+* Need to have ZooKeepe install and started.
+* For ZooKeepe it is need:
+	Supported Platforms
+		* GNU/Linux.
+		* Sun Solaris.
+		* FreeBSD.
+		* Win32.
+		* MacOSX.
+	JDK 6 or greater.
+*
 
 ### Schedule 
   
@@ -473,6 +487,7 @@ https://docs.datastax.com/en/cql/3.1/index.html (17/10/2017)
 ##### Kafka
 
 https://kafka.apache.org/documentation/ (10/12/2017)
+https://zookeeper.apache.org/doc/r3.1.2/zookeeperAdmin.html#sc_systemReq (11/12/2017)
 
 ## Apendex
 

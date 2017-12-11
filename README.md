@@ -100,10 +100,24 @@ These section is about taking the needs of the project learning the theory that 
 
 ### Big picture of the system.
 
-( ESQUEMA )
+( ESQUEMA SIN HABLAR DE TECNOLOGIAS SOLO CON ELEMENTOS )
 
 ### Database
-#### RELATIONAL vs NoSQL 
+( BREVE INTRODUCCION )
+
+
+##### CAP Theorem 
+
+Also known as Brewer’s theorem states that distributed databases cannot have consistency Availability and Partition Tolerance all at the same time. 
+  
+* Consistency: consistent copies of data on different servers. 
+  
+* Availability: refers to providing a response to any query 
+  
+* Partition Tolerance: means if a network that connects two or more databases and if one servers fails, the servers will still be one available with consistent data. 
+
+#### Relational vs NoSQL 
+
 ##### Limitations of Relational Databases
 Nowadays the amount of data that needs to be stored and the processed has been increasing in big quantities, and with it new terms have come such as "BIG DATA", "Internet of Things" or "Analytics". The way of supporting large numbers of users from companies like Google, Facebook, Amazon, etc. change the way of managing data than smaller numbers of business users.  
   
@@ -117,7 +131,7 @@ Web applications serving tens of thousands or more users were difficult to imple
 
 * Availability: Being able to querying is one of the big problems when you have millions of users accessing the information at almost the same time from anywhere in the world. We need to ensure that the database has a way to ensure that the data when there are infrastructure problems, or system errors. With Relational Databases is not an easy problem to solve, it can become a very complicated problem when maximizes the availability is needed.  
 
-#### NoSQL 
+##### NoSQL 
 
 The idea of the NoSQL database is to solve the problems that the typical relational database has. A good definition for a NoSQL is a variety of different database technologies that are being non-relational as we mentioned before that is one of the problems that we are having with very large amount of Data, it is also distributed meaning that they can be inculcate to multiple processors. Another characteristic of the NoSQL is that they have to be horizontally scalable, that means that we can increase the number of the nodes, and not having to scale vertically, increase the size of the node. 
   
@@ -135,7 +149,7 @@ When we talk about big data we have 4 dimensions or the 4 V:
 * Velocity: The velocity that we need to process the data either the speed of generating (and saving) the data and the read of analysis.  
 https://bicorner.com/2015/06/25/characteristics-that-make-big-data-big/ (1/12/2017)
 
-#### Types of NoSQL
+##### Types of NoSQL
 
 * Column Families: 
 
@@ -166,21 +180,66 @@ Graph Databases as its name suggest, is a database base on the mathematical elem
   
 Sometimes one type of database it does not required all the characteristics of the system. Sometimes is good to combine the different models for a better performance. For example, when a user logs into the system it might need to access the data of the user many times, a good possibility for having better speed is to use a SQL database that needs to be done  
 
+#### Table of compatating tecnologyes
+
+| Tecnology |type | Advantage | disadvantages  | 
+| ---------------- |:--------------------|:-----------------------------------:|:-----------------------------------:| 
+| Apache Cassandra | column store      | open source. Per to per architecture. Scheme free. | $1600                    | 
+| MongoDB          | document store | Schema less |            $12                            | 
+| ArangoDB           | Multimodal Database |                          w               |                    $1 | 
+| Hadoop           | Colum store    |Open source It can manage multiple nodes acros different servers working in parallel. It is good to manage large numbers of unstructured data. It is fault tolerance | Security: No data encryption. Limitations at the time to improve efficiency, reliability and integration| 
+| Couch DB         | document store |                         w                |                   w                      | 
+| Elastic          |          w     | or Azure SQL Database                   |                   w                      | 
+  
+
+A continuation I will explain the tecnologies that I choes for the database:
+
+##### Cassandra:
+Apache Cassandra is open source, distributed data storage system that differs sharply from relational database management systems. 
+  
+Cassandra is a NoSQL using Column Store model. It has a primary language call CQL (Cassandra Query Language) that is use for communicating with the database.  
+  
+![alt text](https://github.com/isauraAlmar/Personal/blob/master/Screenshot from 2017-12-04 15-50-51.png) 
+  
+##### The History of Cassandra 
+  
+Cassandra first started as an incubation project at Apache in January of 2009. Shortly thereafter, the committers, led by Apache Cassandra Project Chair Jonathan Ellis, re-leased version 0.3 of Cassandra, and have steadily made minor releases since that time. 
+  
+Though as of this writing it has not yet reached a 1.0 release, Cassandra is being used in production by some of the biggest properties on the Web, including Facebook, Twitter, Cisco, Rackspace, Digg, Cloud kick, Reddit, and more. \[book]
+
+Releases after graduation include:
+
+    0.6, released Apr 12 2010, added support for integrated caching, and Apache Hadoop MapReduce
+    0.7, released Jan 08 2011, added secondary indexes and online schema changes
+    0.8, released Jun 2 2011, added the Cassandra Query Language (CQL), self-tuning memtables, and support for zero-downtime upgrades
+    1.0, released Oct 17 2011, added integrated compression, leveled compaction, and improved read performance
+    1.1, released Apr 23 2012, added self-tuning caches, row-level isolation, and support for mixed ssd/spinning disk deployments
+    1.2, released Jan 2 2013, added clustering across virtual nodes, inter-node communication, atomic batches, and request tracing
+    2.0, released Sep 4 2013, added lightweight transactions (based on the Paxos consensus protocol), triggers, improved compactions, CQL paging support, prepared statement support, SELECT column alias support
+
+##### Why Cassandra
+* Scalability: In the system is very important to design for a scalability because the company could decide to add hundreds of new robots over a short period of time. So, Cassandra is prepared to have a high scalability performance.  
+  
+* Write Speed: It is important that when the system want to save new information it does fast because there may be vast amounts of information to save. One of the examples that needs to be fast is when you save all the interaction information as a log. 
+  
+* It provides high availability:  
+  
+* Designed to manage very large amounts of structured data like logs. 
+  
+* Peer-to-peer distribution model.  
+  
+* The gossiper is a protocol communication (to support decentralization and partition tolerance) responsible for making sure every node in the system eventually knows important information about every other node's state, including those that are unreachable or not yet in the cluster when any given state change occurs.  
+  
+* It have AntiEntropy,  it is a synchronization mechanism that consist in comparing all the replicas of each piece of data that exist (or are supposed to) and updating each replica to the newest version.  
+  
+* CQL (Cassandra Query Language), it is a subset of SQL and its easy for someone coming from SQL to learn.  
+  
+  
 ### Architectura 
 #### SOA 
 #### Microservices  
   
-##### Container 
-  
-##### CAP Theorem 
 
-Also known as Brewer’s theorem states that distributed databases cannot have consistency Availability and Partition Tolerance all at the same time. 
-  
-* Consistency: consistent copies of data on different servers. 
-  
-* Availability: refers to providing a response to any query 
-  
-* Partition Tolerance: means if a network that connects two or more databases and if one servers fails, the servers will still be one available with consistent data. 
 
 ##### ACID:	
 *Atomicity: A unit that cannot be further divided.	
@@ -210,56 +269,6 @@ In this section It describes the research about which technologies that can be u
 ### Technologies 
   
 Table of Database different technologies and its advantages and disadvantages. 
-  
-| Tecnology |type | Advantage | disadvantages  | 
-| ---------------- |:--------------------|:-----------------------------------:|:-----------------------------------:| 
-| Apache Cassandra | column store      | open source. Per to per architecture. Scheme free. | $1600                    | 
-| MongoDB          | document store | Schema less |            $12                            | 
-| ArangoDB           | Multimodal Database |                          w               |                    $1 | 
-| Hadoop           | Colum store    |Open source It can manage multiple nodes acros different servers working in parallel. It is good to manage large numbers of unstructured data. It is fault tolerance | Security: No data encryption. Limitations at the time to improve efficiency, reliability and integration| 
-| Couch DB         | document store |                         w                |                   w                      | 
-| Elastic          |          w     | or Azure SQL Database                   |                   w                      | 
-  
-
-#### Cassandra:
-Apache Cassandra is open source, distributed data storage system that differs sharply from relational database management systems. 
-  
-Cassandra is a NoSQL using Column Store model. It has a primary language call CQL (Cassandra Query Language) that is use for communicating with the database.  
-  
-![alt text](https://github.com/isauraAlmar/Personal/blob/master/Screenshot from 2017-12-04 15-50-51.png) 
-  
-##### The History of Cassandra 
-  
-Cassandra first started as an incubation project at Apache in January of 2009. Shortly thereafter, the committers, led by Apache Cassandra Project Chair Jonathan Ellis, re-leased version 0.3 of Cassandra, and have steadily made minor releases since that time. 
-  
-Though as of this writing it has not yet reached a 1.0 release, Cassandra is being used in production by some of the biggest properties on the Web, including Facebook, Twitter, Cisco, Rackspace, Digg, Cloud kick, Reddit, and more. \[book]
-
-Releases after graduation include:
-
-    0.6, released Apr 12 2010, added support for integrated caching, and Apache Hadoop MapReduce
-    0.7, released Jan 08 2011, added secondary indexes and online schema changes
-    0.8, released Jun 2 2011, added the Cassandra Query Language (CQL), self-tuning memtables, and support for zero-downtime upgrades
-    1.0, released Oct 17 2011, added integrated compression, leveled compaction, and improved read performance
-    1.1, released Apr 23 2012, added self-tuning caches, row-level isolation, and support for mixed ssd/spinning disk deployments
-    1.2, released Jan 2 2013, added clustering across virtual nodes, inter-node communication, atomic batches, and request tracing
-    2.0, released Sep 4 2013, added lightweight transactions (based on the Paxos consensus protocol), triggers, improved compactions, CQL paging support, prepared statement support, SELECT column alias support
-
-##### Why Cassandra
-** Scalability: In the system is very important to design for a scalability because the company could decide to add hundreds of new robots over a short period of time. So, Cassandra is prepared to have a high scalability performance.  
-  
-* Write Speed: It is important that when the system want to save new information it does fast because there may be vast amounts of information to save. One of the examples that needs to be fast is when you save all the interaction information as a log. 
-  
-* It provides high availability:  
-  
-* Designed to manage very large amounts of structured data like logs. 
-  
-* Peer-to-peer distribution model.  
-  
-* The gossiper is a protocol communication (to support decentralization and partition tolerance) responsible for making sure every node in the system eventually knows important information about every other node's state, including those that are unreachable or not yet in the cluster when any given state change occurs.  
-  
-* It have AntiEntropy,  it is a synchronization mechanism that consist in comparing all the replicas of each piece of data that exist (or are supposed to) and updating each replica to the newest version.  
-  
-* CQL (Cassandra Query Language), it is a subset of SQL and its easy for someone coming from SQL to learn.  
   
   
 #### Elasticsearch 

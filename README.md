@@ -191,8 +191,44 @@ Sometimes one type of database it does not required all the characteristics of t
 | Couch DB         | document store |                         w                |                   w                      | 
 | Elastic          |          w     | or Azure SQL Database                   |                   w                      | 
   
+I will explain the tecnologye I had use and the reason at ROJECT DEVELOPMENT section
+  
+### Architectura 
+#### SOA 
+#### Microservices  
+  
 
-A continuation I will explain the tecnologies that I choes for the database:
+
+##### ACID:	
+*Atomicity: A unit that cannot be further divided.	
+
+*Consistency: Ensure the integration of data.
+
+*Isolation:
+
+*Durability:
+	
+##### BASE:	
+
+*Basically:	
+
+*Available:	
+
+*Soft State:
+
+*Eventually Consistent:
+
+## PROJECT DEVELOPMENT 
+
+### Introduction
+
+In this section It describes the research about which technologies that can be used to solve the database problem, and a comparison between them to find which ones can be the best. It is also to define the architecture of the system and which technologies that can be used to implement it.  
+  
+### Technologies 
+
+#### Tecnologies for Database
+
+For crating a database I use Elasandrea, that is a convertion fo Cassandra, an NoSql using the colum family model, and Elastic search a serche engine. 
 
 ##### Cassandra:
 Apache Cassandra is open source, distributed data storage system that differs sharply from relational database management systems. 
@@ -233,42 +269,62 @@ Releases after graduation include:
 * It have AntiEntropy,  it is a synchronization mechanism that consist in comparing all the replicas of each piece of data that exist (or are supposed to) and updating each replica to the newest version.  
   
 * CQL (Cassandra Query Language), it is a subset of SQL and its easy for someone coming from SQL to learn.  
+    
+#### Elasticsearch 
+  
+Elasticsearch is a search engine base on RESTful, that have two main functions: it can be used as an analytic framework and datastore as well. 
+  
+It can be used for several cases:  
+* As a Text Search. 
+* Event Data and Metrics. 
+* Visualizing Data. 
+* Scraping and Combining Public Data. 
+* Logging and Log Analysis. 
+  
+INDEX:  
+  
+INDEXING: Is the action to receive a document and store/process in an index. 
+  
+SEARCHING: is the action to retrieve the data from the index. 
+  
+MAPPING 
+  
+* Mapping base types: 
+* Mapping arrays 
+* Mapping an object 
+* Mapping a document 
+  
+... 
+  
+NODE: 
+  
+CLUSTER: 
   
   
-### Architectura 
-#### SOA 
-#### Microservices  
+  
+##### History 
+  
+Elasticsearch had the first version released  for Shay Banon in Febrary 2010. Shay Banon had a scalability issue with Compass and he decide to rewrite and used a common interface, JSON over HTTP, suitable for programming languages other than Java as well. 
+  
+##### Why Elasticsearch 
+  
+One of the advantages of Elasticsearch is that you can create a client made of any language as the answer is a JSON object. The main advantages of these protocol are: 
+  
+* Portability: It use web standards so it can be implemented in many languages such as Java, Python, Ruby, c#, etc., or called form command lines applications such as curl. 
+* Durability: 
+* Simple to use: 
+* High support: Alot of plugins uses a REST endpoint on HTTP. 
+* Scalability:  Is the same to talk to Elasticsearch running on a single node than hundreds of them. It scales horizontally to handle billions of events per second, while automatically managing how indices and queries are distributed across the cluster for oh-so smooth operations. 
+* Speed: 
+  
+  
+There are several reasons for use Elasticsearch instead of other search engines. First of all is because it has a big community that maintain and use it. That can be really useful at the time to solve problems or learn how to use it. Another reason is because the community apart official rivers that support the most use programming languages. 
+  
+  
+* Resilient, Highly Available 
   
 
 
-##### ACID:	
-*Atomicity: A unit that cannot be further divided.	
-
-*Consistency: Ensure the integration of data.
-
-*Isolation:
-
-*Durability:
-	
-##### BASE:	
-
-*Basically:	
-
-*Available:	
-
-*Soft State:
-
-*Eventually Consistent:
-
-## PROJECT DEVELOPMENT 
-
-### Introduction
-
-In this section It describes the research about which technologies that can be used to solve the database problem, and a comparison between them to find which ones can be the best. It is also to define the architecture of the system and which technologies that can be used to implement it.  
-  
-### Technologies 
-  
-Table of Database different technologies and its advantages and disadvantages. 
   
   
 #### Elasticsearch 
@@ -323,7 +379,23 @@ There are several reasons for use Elasticsearch instead of other search engines.
   
   
 * Resilient, Highly Available 
+ 
+ #### Elisandra = Elasticserch + Casandra 
   
+Elassandra is a fork of Elasticsearch modified to run as a plugin for Apache Cassandra in a scalable and resilient peer-to-peer architecture. Elasticsearch code is embedded in Cassanda nodes providing advanced search features on Cassandra tables and Cassandra serve as an Elasticsearch data and configuration store. 
+  
+![alt text](https://github.com/isauraAlmar/Personal/blob/master/elassandraarchitecture.jpg) 
+  
+##### History 
+##### Characteristics 
+##### Why Elassandra 
+  
+An Elasticsearch index is mapped to a cassandra keyspace, and a document type to a cassandra table. 
+  
+###### Benefits of Elassandra   
+  
+### Tecnologies for the architecture
+
 #### Docker 
   
 Docker is a container technology that is create 
@@ -336,29 +408,6 @@ Docker is a container technology that is create
 * Increase security: The Docker EE platform provides you with all the tools and capabilities you need to run containers securely at scale. With services like security scanning and container signing, Docker EE enables you to protect all app components from the source, across the network, and to different collaborators and environments with guarantees against tampering. 
   
 * Efficiency: By containerizing your legacy application on Docker Enterprise Edition (EE), you reduce the total resource requirements to run your application. This increases operational efficiency and allows you to consolidate your infrastructure. 
-  
-  
-  
-  
-  
-#### Elisandra = Elasticserch + Casandra 
-  
-Elassandra is a fork of Elasticsearch modified to run as a plugin for Apache Cassandra in a scalable and resilient peer-to-peer architecture. Elasticsearch code is embedded in Cassanda nodes providing advanced search features on Cassandra tables and Cassandra serve as an Elasticsearch data and configuration store. 
-  
-![alt text](https://github.com/isauraAlmar/Personal/blob/master/elassandraarchitecture.jpg) 
-  
-  
-  
-  
-##### History 
-##### Characteristics 
-##### Why Elassandra 
-  
-An Elasticsearch index is mapped to a cassandra keyspace, and a document type to a cassandra table. 
-  
-###### Benefits of Elassandra 
-  
-  
   
 ### Schedule 
   

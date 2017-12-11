@@ -268,7 +268,7 @@ Releases after graduation include:
   
 * It have AntiEntropy,  it is a synchronization mechanism that consist in comparing all the replicas of each piece of data that exist (or are supposed to) and updating each replica to the newest version.  
   
-* CQL (Cassandra Query Language), it is a subset of SQL and its easy for someone coming from SQL to learn.  
+* It use CQL (Cassandra Query Language), it is a subset of SQL and its easy for someone coming from SQL to learn.  
     
 #### Elasticsearch 
   
@@ -323,62 +323,6 @@ There are several reasons for use Elasticsearch instead of other search engines.
   
 * Resilient, Highly Available 
   
-
-
-  
-  
-#### Elasticsearch 
-  
-Elasticsearch is a search engine base on RESTful, that have two main functions: it can be used as an analytic framework and datastore as well. 
-  
-It can be used for several cases:  
-* As a Text Search. 
-* Event Data and Metrics. 
-* Visualizing Data. 
-* Scraping and Combining Public Data. 
-* Logging and Log Analysis. 
-  
-INDEX:  
-  
-INDEXING: Is the action to receive a document and store/process in an index. 
-  
-SEARCHING: is the action to retrieve the data from the index. 
-  
-MAPPING 
-  
-* Mapping base types: 
-* Mapping arrays 
-* Mapping an object 
-* Mapping a document 
-  
-... 
-  
-NODE: 
-  
-CLUSTER: 
-  
-  
-  
-##### History 
-  
-Elasticsearch had the first version released  for Shay Banon in Febrary 2010. Shay Banon had a scalability issue with Compass and he decide to rewrite and used a common interface, JSON over HTTP, suitable for programming languages other than Java as well. 
-  
-##### Why Elasticsearch 
-  
-One of the advantages of Elasticsearch is that you can create a client made of any language as the answer is a JSON object. The main advantages of these protocol are: 
-  
-* Portability: It use web standards so it can be implemented in many languages such as Java, Python, Ruby, c#, etc., or called form command lines applications such as curl. 
-* Durability: 
-* Simple to use: 
-* High support: Alot of plugins uses a REST endpoint on HTTP. 
-* Scalability:  Is the same to talk to Elasticsearch running on a single node than hundreds of them. It scales horizontally to handle billions of events per second, while automatically managing how indices and queries are distributed across the cluster for oh-so smooth operations. 
-* Speed: 
-  
-  
-There are several reasons for use Elasticsearch instead of other search engines. First of all is because it has a big community that maintain and use it. That can be really useful at the time to solve problems or learn how to use it. Another reason is because the community apart official rivers that support the most use programming languages. 
-  
-  
-* Resilient, Highly Available 
  
  #### Elisandra = Elasticserch + Casandra 
   
@@ -389,15 +333,14 @@ Elassandra is a fork of Elasticsearch modified to run as a plugin for Apache Cas
 ##### History 
 ##### Characteristics 
 ##### Why Elassandra 
-  
-An Elasticsearch index is mapped to a cassandra keyspace, and a document type to a cassandra table. 
-  
-###### Benefits of Elassandra   
-  
+
+* It have an enterprise vertion
+* An Elasticsearch index is mapped to a cassandra keyspace, and a document type to a cassandra table. 
+* Doker  
+
 ### Tecnologies for the architecture
 
 #### Docker 
-  
 Docker is a container technology that is create 
 ##### History 
 ##### Characteristics 
@@ -408,7 +351,9 @@ Docker is a container technology that is create
 * Increase security: The Docker EE platform provides you with all the tools and capabilities you need to run containers securely at scale. With services like security scanning and container signing, Docker EE enables you to protect all app components from the source, across the network, and to different collaborators and environments with guarantees against tampering. 
   
 * Efficiency: By containerizing your legacy application on Docker Enterprise Edition (EE), you reduce the total resource requirements to run your application. This increases operational efficiency and allows you to consolidate your infrastructure. 
-  
+
+* Enterprise vertion
+
 ### Schedule 
   
 A Gantt diagrams 
@@ -508,11 +453,11 @@ https://www.rosehosting.com/blog/how-to-install-apache-cassandra-on-ubuntu-16-04
 https://docs.datastax.com/en/cql/3.1/cql/cql_intro_c.html (17/10/2017)
 
 ##### Elisandra: Elasticsearch + Cassandra 
-http://doc.elassandra.io/en/latest/installation.html
+http://doc.elassandra.io/en/latest/installation.html (2/11/2017)
 
-https://github.com/strapdata/elassandra
+https://github.com/strapdata/elassandra (2/11/2017)
 
-https://www.youtube.com/watch?v=0WuLZTvA3YM
+https://www.youtube.com/watch?v=0WuLZTvA3YM (2/11/2017)
 
 ##### Elasticsearch
 

@@ -78,20 +78,43 @@ That is why the team had the idea about creating a server where the robot will c
 
 Imagine that a girl calls Lisa, entre into a store for the first time. At the entrance, she meets a robot, and the robot learns ho she is. Another day Lisa go to another store with the same company as before that is located in another city. There is also a robot, and it already knows who Lisa is, them interests last time, and a record of what she pushes in the past.
 
-The previous example shows in big words what the system have to do.
+In conclution, the poposit of these project is to investigate and desing a system where robots can connect to get them capavilityes fore one side. On the other hand is to develop the database where to sotrage the knowledge that robots acquire. 
 
+Naw a days we can here alot the word of BigData. One need that the copanye have is to be able to store all the interactions betwen the robots and the persons in ordet to analize them. So the sitem have to be able to save all the logs in the database.
+
+
+The previous example shows in big words what the system have to do.
+(CREAT IT)
+
+### What they have
+
+Before I start the project the companye had a small prove of concept. These POC concist on tow dockers:
+
+* One call streaming that.
+
+* Another one
+
+##### ROS Requirments
 
 ### Requisits 
 
 The system needs to be prepare for scalability in tow ways:
 
-* The fist one it is refers the number of robots. We will be able to have at least 1 robot at the beguining. But in about a year it is espect to have conect in it aroun one milion of robots. So it is importat that there is no problem on ading robot very fast.
+* The fist one it refers the number of robots. We will be able to have at least 1 robot at the beguining. But in about a year it is espect to have conect in it aroun one milion of robots. So it is importat that there is no problem on ading robot very fast.
 
 * The second one it refers on the sofware side. The sistem need to be able to add funtionalityes in a easy way. An exemple of funtionalytie my be face tetection, Neuro-linguistic programming, mapping, a new behabour, etc.
 
 Another challenge that the system needs to overcome is the fact of being multiplatform. It needs to be able to communicate with robots of many brands. On the other way also it requires integrating behaviours and functionalities than can be code in multiple languages or run in a separate different OS.  
 
 When you are talking about social robots it is important to mention real time interactions, that is the reason why the system needs to be able to have streaming comunication.
+
+### Propose of the project
+
+Why SQL or NoSQL? Wich can be a good database for saving the logs and all the knowledgement?
+
+Which system, is ROS scalable enough, does it accomplish all our needs?
+
+Which type of Architecture is the best for The cloud system?
 
 ## Analysis and reserch
 

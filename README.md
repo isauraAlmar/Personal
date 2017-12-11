@@ -42,9 +42,7 @@ We have two areas of actuation:
 Business (non-industrial) where through introducing robots in companies the workers will feel more comfortable. 
 Social focusing on using the robotics to improve the society. For example, people with disabilities, improve learning or robot partner.
 
-* CLOQQ: Everis has launched CLOQQ, a social initiative where children can explore creative technologies, express their own ideas and better understand the world around them. At the same time, children will be able to develop skills to solve unexpected problems, work collaboratively and increase their self-confidence.
-
-CLOQQ (acronym for "Crea Lo Que Quieras" in English  "Create What You Want") offers both face-to-face activities (workshops, events, etc.) and a complete online and content environment for girls and boys to create their own video games, apps, robots, animations and much more. Watch video.
+* CLOQQ: CLOQQ (acronym for "Crea Lo Que Quieras" in English  "Create What You Want") offers both face-to-face activities (workshops, events, etc.) and a complete online and content environment for girls and boys to create their own video games, apps, robots, animations and much more. Watch video.
 
 https://www.everis.com/spain/es/news/newsroom/everis-lanza-cloqq-una-iniciativa-para-que-ninos-y-ninas-se-diviertan-aprendiendo-0
 
@@ -80,23 +78,33 @@ That is why the team had the idea about creating a server where the robot will c
 
 Imagine that a girl calls Lisa, entre into a store for the first time. At the entrance, she meets a robot, and the robot learns ho she is. Another day Lisa go to another store with the same company as before that is located in another city. There is also a robot, and it already knows who Lisa is, them interests last time, and a record of what she pushes in the past.
 
-The previous example shows in big words what the system is going to be able to do.
+The previous example shows in big words what the system have to do.
 
 
 ### Requisits 
 
 The system needs to be prepare for scalability in tow ways:
 
-* The fist one
-* The second one
+* The fist one it is refers the number of robots. We will be able to have at least 1 robot at the beguining. But in about a year it is espect to have conect in it aroun one milion of robots. So it is importat that there is no problem on ading robot very fast.
+
+* The second one it refers on the sofware side. The sistem need to be able to add funtionalityes in a easy way. An exemple of funtionalytie my be face tetection, Neuro-linguistic programming, mapping, a new behabour, etc.
+
+Another challenge that the system needs to overcome is the fact of being multiplatform. It needs to be able to communicate with robots of many brands. On the other way also it requires integrating behaviours and functionalities than can be code in multiple languages or run in a separate different OS.  
+
+When you are talking about social robots it is important to mention real time interactions, that is the reason why the system needs to be able to have streaming comunication.
 
 ## Analysis and reserch
 
-These section is about defining the needs of the project learning the theory that is needed and research about witch technologies can be use and which ones may work better. 
+These section is about taking the needs of the project learning the theory that is related with it and research about witch technologies can be use and which ones may work better. 
 
-### RELATIONAL vs NoSQL 
 
-#### Limitations of Relational Databases
+### Big picture of the system.
+
+( ESQUEMA )
+
+### Database
+#### RELATIONAL vs NoSQL 
+##### Limitations of Relational Databases
 Nowadays the amount of data that needs to be stored and the processed has been increasing in big quantities, and with it new terms have come such as "BIG DATA", "Internet of Things" or "Analytics". The way of supporting large numbers of users from companies like Google, Facebook, Amazon, etc. change the way of managing data than smaller numbers of business users.  
   
 Web applications serving tens of thousands or more users were difficult to implement with relational databases. Four characteristics of data management systems that are particularly important for large-scale data management tasks are: 
@@ -170,7 +178,7 @@ Also known as Brewer’s theorem states that distributed databases cannot have c
   
 * Consistency: consistent copies of data on different servers. 
   
-* Availability: refers    to providing a response    to any query 
+* Availability: refers to providing a response to any query 
   
 * Partition Tolerance: means if a network that connects two or more databases and if one servers fails, the servers will still be one available with consistent data. 
 

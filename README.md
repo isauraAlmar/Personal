@@ -415,6 +415,8 @@ Depending of the OS. To install Docker CE in Ubuntu, you
 * Ubuntu on x86_64, armhf, and s390x (IBM z Systems) architectures. 
 
 #### Kafka
+
+![alt text](https://github.com/isauraAlmar/Personal/blob/master/Screen%20Shot%202017-12-11%20at%2012.04.13.png)
 ##### History  
 ##### Why kafka
 ##### Requierments
@@ -428,6 +430,7 @@ Depending of the OS. To install Docker CE in Ubuntu, you
 		* MacOSX.
 	JDK 6 or greater.
 *
+
 
 ### Schedule 
   

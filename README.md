@@ -218,8 +218,28 @@ Sometimes one type of database it does not required all the characteristics of t
 I will explain the tecnologye I had use and the reason at ROJECT DEVELOPMENT section
   
 ### Architectura 
+(SHORT INTRODUCCTION)
+
 #### SOA 
 #### Microservices  
+" Self containe process that provides a unique buissnes capability"
+https://www.youtube.com/watch?v=PY9xSykods4
+
+it is important to focus on single bussnes capavilities.
+* almost dtateles of the aplicatopm
+
+IMPORTAN SETINGS
+
+each group need to have oun data model.
+make comunication state less
+
+REAL EXEMPLES: 
+* Amazon
+
+Advantages: 
+
+* It is easy to have small teams developing each capability
+* Incase that one service broke the others will keep working
   
 
 

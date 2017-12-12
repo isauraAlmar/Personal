@@ -109,6 +109,7 @@ Another challenge that the system needs to overcome is the fact of being multipl
 When you are talking about social robots it is important to mention real time interactions, that is the reason why the system needs to be able to have streaming comunication.
 
 ### Propose of the project
+(INSTEAD OF MENTIONET I SHOULD EXPLAIN THEM)
 
 Why SQL or NoSQL? Wich can be a good database for saving the logs and all the knowledgement?
 

@@ -2,9 +2,9 @@
 
 ## INTRODUCTION
 
-The goal of this section is to provide context about the environment where this project has been developed. The first subsection will provide a general overview of the project, explaining the antecedents and the original idea.
+The goal of this chapter is to provide context about the environment where this project has been developed. The first subsection will provide a general overview of the project, explaining the antecedents and the original idea.
 
-As the project has been developed during an internship in a company, the second subsection will include some background information about the company, everis.
+As the project has been developed in collaboration with a company, the second subsection will include some background information about the company, everis
 
 The next part dives deeper into the structure of everis, and will focus on NextGen, everis innovation area. The fourth subsection will explain the structure of the Robotics/Augmented Workforce team, where I am currently collaborating. We will finish this section explaining the current needs of the different projects in which my team is working, and how this project is able to help.
 

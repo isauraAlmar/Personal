@@ -605,3 +605,9 @@ In standalone mode all work is performed in a single process. This configuration
  > bin/connect-standalone.sh config/connect-standalone.properties connector1.properties [connector2.properties ...]
 
 "
+¨
+´
+" Distributed mode handles automatic balancing of work, allows you to scale up (or down) dynamically, and offers fault tolerance both in the active tasks and for configuration and offset commit data. Execution is very similar to standalone mode:
+
+1
+> bin/connect-distributed.sh config/connect-distributed.properties"

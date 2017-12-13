@@ -40,11 +40,6 @@ What Everis can do for companies:
 * Operations, Delivering quality and efficient Managed Services
 
 
-NextGen lives and breathes global digital transformation.
-
-From CAPEX to OPEX, cloud models and taking a strategic approach to production. From digital and legacy transformation, Blockchain, Big Data Analytics, AI and Robotics. We have the know-how, the attitude and drive to maximize our clients’ opportunities.
-
-
 ### About the department
 ![alt text](https://github.com/isauraAlmar/Personal/blob/master/NexGenScema.png)
 

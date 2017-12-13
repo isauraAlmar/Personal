@@ -573,9 +573,9 @@ https://zookeeper.apache.org/doc/r3.1.2/zookeeperAdmin.html#sc_systemReq (11/12/
 ## Appendix
 
 ### Basic concepts
-Cluster:
+Cluster: a cluster can be a group nodes which can consist of computers, databases, or other techonoglies that work together closely
 
-Node:
+Node: a single computer or database or techonogly in a system.
 
 Index:
 
@@ -589,12 +589,15 @@ Shards and Replicas:
 *
 ### Abreviations
 
-NoSQL
+NoSQL - non relational Structured Query Language
 
-DB
+DB - Database
 
-SW
+SW - Software
 
-HW
+HW - Hardware
 
-OS
+OS - Operationg system
+
+
+//think about the reason behind choosing techonoliges such as documentation, maturity , and the other 3 things

@@ -596,3 +596,12 @@ OS - Operationg system
 
 
 //think about the reason behind choosing techonoliges such as documentation, maturity , and the other 3 things
+
+"Kafka Connect currently supports two modes of execution: standalone (single process) and distributed.
+
+In standalone mode all work is performed in a single process. This configuration is simpler to setup and get started with and may be useful in situations where only one worker makes sense (e.g. collecting log files), but it does not benefit from some of the features of Kafka Connect such as fault tolerance. You can start a standalone process with the following command:
+
+1
+ > bin/connect-standalone.sh config/connect-standalone.properties connector1.properties [connector2.properties ...]
+
+"

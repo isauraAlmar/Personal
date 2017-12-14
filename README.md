@@ -51,7 +51,6 @@ What Everis can do for companies:
 The main goal of the team at Everis is to integrate the robots into the society to generate a global benefit. Instead of focusing on the robot, the main goal of the company is the relation between human-robot in order to generate a smooth and friendly interaction.
 
 
-
 * CLOQQ: CLOQQ (acronym for "Crea Lo Que Quieras" in English  "Create What You Want") offers both face-to-face activities (workshops, events, etc.) and a complete online and content environment for girls and boys to create their own video games, apps, robots, animations and much more. Watch video.
 
 https://www.everis.com/spain/es/news/newsroom/everis-lanza-cloqq-una-iniciativa-para-que-ninos-y-ninas-se-diviertan-aprendiendo-0 (12/11/2017)
@@ -102,8 +101,9 @@ Before I start the project the companye had a small Proof of Concept (PoC). This
 
 * One call streaming that.
 
-* Another one
+* Another one call skills where there where you can find diferent skills for the robots to use. For exemple Delib (face recognition) Affectiva (motion recognition), Brainr (learning by demostration)
 
+(ADD ESQUEMA ROS CLOWD)
 ##### ROS Requirements
 
 ### Requisites

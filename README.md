@@ -235,7 +235,12 @@ I will explain the tecnologye I had use and the reason at ROJECT DEVELOPMENT sec
 " Self contained process that provides a unique business capability"
 https://www.youtube.com/watch?v=PY9xSykods4
 
-it is important to focus on single business capabilities.
+"The term "Microservice Architecture" has sprung up over the last few years to describe a particular way of designing software applications as suites of independently deployable services. While there is no precise definition of this architectural style, there are certain common characteristics around organization around business capability, automated deployment, intelligence in the endpoints, and decentralized control of languages and data." Martin
+
+
+"... the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. 
+it is important to focus on single business capabilities." [The term "microservice" was discussed at a workshop of software architects near Venice in May, 2011 to describe what the participants saw as a common architectural style that many of them had been recently exploring. In May 2012, the same group decided on "microservices" as the most appropriate name. James presented some of these ideas as a case study in March 2012 at 33rd Degree in Krakow in Microservices - Java, the Unix Way as did Fred George about the same time. Adrian Cockcroft at Netflix, describing this approach as "fine grained SOA" was pioneering the style at web scale as were many of the others mentioned in this article - Joe Walnes, Dan North, Evan Botcher and Graham Tackley.]
+x
 * almost dtateles of the aplication
 
 IMPORTANT SETTINGS
@@ -446,8 +451,40 @@ Depending of the OS. To install Docker CE in Ubuntu, you
 
 A Gantt diagram
 
+### Analazing ros ROS architecture.
+
+differnt modules eplanation.
+
+* Robot framework: I it is lines of code that are running inside the robot and it finality it is for establishing the connection between the robot and the the server.
+
+* Streaming docker: these block the only things that does is reciving the streaming of one camera and save it in a shere memory.
+
+* Skills docker: In these module there is all the skills and beheibors that the robot could have. I reads the sheare memory to get the images from the robot. It sends what the robot have to do.
+
+
+It only recive one camara at the time.
+
+Every time you want to add a different for the first time:
+* Create the robot framework.
+* Redo some of the skills inorder to accept and adapt the robot.
+
+Every time you want to add a new skill:
+
+1 stop all the system
+2 Change the docker file to add the new file
+3 Rebuild the docker.
+4 Run the streaming Docker.
+6 Inside the docker run the scrip that recive the streaming.
+5 Runr the skill Doker.
+7 Inside the docker run the scrip of the skills that you want to use.
+
+As you can see that every time that it is need to add a new skill or iven a little change to one of them, it is need to stop the hold siste, 
+
 ## Solution
 ### Architecture design
+
+In order to acomplich the  requirments for these project I decide to use michroservice architecture. 
+
 #### Design for scalability
 
 

@@ -470,13 +470,13 @@ Every time you want to add a different for the first time:
 
 Every time you want to add a new skill:
 
-1 stop all the system
-2 Change the docker file to add the new file
-3 Rebuild the docker.
-4 Run the streaming Docker.
-6 Inside the docker run the scrip that recive the streaming.
-5 Runr the skill Doker.
-7 Inside the docker run the scrip of the skills that you want to use.
+1. stop all the system
+2. Change the docker file to add the new file
+3. Rebuild the docker.
+4. Run the streaming Docker.
+6. Inside the docker run the scrip that recive the streaming.
+5. Runr the skill Doker.
+7. Inside the docker run the scrip of the skills that you want to use.
 
 As you can see that every time that it is need to add a new skill or iven a little change to one of them, it is need to stop the hold siste. 
 
@@ -486,7 +486,10 @@ Also the fact it is not easy to add another camara. In order to do it is need to
 ## Solution
 ### Architecture design
 
-In order to acomplich the  requirments for these project I decide to use michroservice architecture. 
+In order to acomplich the  requirments for these project I decide to use michroservice architecture. It will give to the sistem some advantagie instead of using the ros. To implement the architecture I dicide tu use kafka and docker.
+
+#### Kafka
+
 
 #### Design for scalability
 
@@ -546,6 +549,22 @@ Logs interaction table:
 
 ## Reflections
 ## Conlutions
+Michroservice architecture. It will give to the sistem some advantagie instead of using the ros:
+
+1. Ther are may tecnologies aout of the box. I chose Kafka, and it is a good tecnologi because there are so many things already implemented.
+2. Beter prformance of scalability. It is simple fast and easy to add new services.
+3. If one service falls the othes ones can keep working.
+
+Benefits of kafka.
+* API connector for Cassandra and elastyc search and other databases. The ones I used they are mantaind by cofluent.
+* Big comunity. It is very helpful at the time to fine divers or solving problems.
+* It suports sreaming comunication. In our sistem it is important to have a real time comunication as we are working with robots. 
+* Confluent Control Center it is a out of a box tool for monitoring. 
+* Ready for foult isolation (EXPLAIN MORE AND HOW IT DOES).
+* It suports REST. 
+
+
+
 
 ##
 ### Books

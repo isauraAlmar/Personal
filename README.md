@@ -50,19 +50,17 @@ What Everis can do for companies:
  Artificial intelligence & Robotics:
 The main goal of the team at Everis is to integrate the robots into the society to generate a global benefit. Instead of focusing on the robot, the main goal of the company is the relation between human-robot in order to generate a smooth and friendly interaction.
 
-We have two areas of actuation:
-Business (non-industrial) where through introducing robots in companies the workers will feel more comfortable.
-Social focusing on using the robotics to improve the society. For example, people with disabilities, improve learning or robot partner.
+
 
 * CLOQQ: CLOQQ (acronym for "Crea Lo Que Quieras" in English  "Create What You Want") offers both face-to-face activities (workshops, events, etc.) and a complete online and content environment for girls and boys to create their own video games, apps, robots, animations and much more. Watch video.
 
-https://www.everis.com/spain/es/news/newsroom/everis-lanza-cloqq-una-iniciativa-para-que-ninos-y-ninas-se-diviertan-aprendiendo-0
+https://www.everis.com/spain/es/news/newsroom/everis-lanza-cloqq-una-iniciativa-para-que-ninos-y-ninas-se-diviertan-aprendiendo-0 (12/11/2017)
 
 * EVERIS INFINITE:  Everis Infinite is a free software application from the Office Suites & Tools subcategory, part of the Business category. The app is currently available in English and it was last updated on 2017-01-20. The program can be installed on iOS.
-https://everis-infinite-ios.soft112.com/
+https://everis-infinite-ios.soft112.com/ (12/11/2017)
 
 ### About the team
-
+(EXPLAIN MORE ABOUT THE PROJECTS THAT WE HAVE)
 Artificial intelligence & Robotics:
 The main goal of the team at Everis is to integrate the robots into the society to generate a global benefit. Instead of focusing on the robot, the main goal of the company is the relation between human-robot in order to generate a smooth and friendly interaction.
 
@@ -83,7 +81,7 @@ Pepper is a robot from Aldebaran, a partner of Soft Bank Group. It is a humanoid
 ###### Sota
 
 
-### Problem Definition // TODO: Adapt
+<!---### Problem Definition // TODO: Adapt
 Robotics found that some of the robots do not have a significant computing power that is a problem when you need to have a few different processes running at the same time, especially when those processes have a big amount of data like processes that use image processing or machine learning. (CONECTOR) there exist robots that can handle high processing costs, but they usually are very expensive.
 
 That is why the team had the idea about creating a server where the robot will connect to it and send information about the state of the sensors and actuators. The server will compute them and send the data to the robot about what they have to do. Furthermore, if you pout that server in “the cloud”, you can connect the robots and connect any robot from everywhere, with the only requirement of having internet access. Also if you have different robots connect to the cloud, you have the possibility of shearing the knowledge between robots. A here is where this project comes. The idea is to create a proof of concept of a system where tow robots that connect to it can share information.
@@ -96,7 +94,7 @@ Nowadays, every company is e alot the word of BigData. One need that the company
 
 
 The previous example shows in big words what the system have to do.
-(CREAT IT)
+(CREAT IT) -->
 
 ### What they have
 

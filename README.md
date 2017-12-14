@@ -478,7 +478,10 @@ Every time you want to add a new skill:
 5 Runr the skill Doker.
 7 Inside the docker run the scrip of the skills that you want to use.
 
-As you can see that every time that it is need to add a new skill or iven a little change to one of them, it is need to stop the hold siste, 
+As you can see that every time that it is need to add a new skill or iven a little change to one of them, it is need to stop the hold siste. 
+
+Also the fact it is not easy to add another camara. In order to do it is need to run a second streaming Docker and change the skills that are going to use both camaras. 
+
 
 ## Solution
 ### Architecture design

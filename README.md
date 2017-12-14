@@ -44,7 +44,7 @@ What Everis can do for companies:
 ![alt text](https://github.com/isauraAlmar/Personal/blob/master/NexGenScema.png)
 
 
- * Everis NEXT:
+ * Everis NEXT: A Big Data and Artificial Intelligence based system that gathers the global information of disruptive startups, scouts technologies and extracts market insights as well as the investment strategies of main multinational companies.
 
  * Augmented workforce:
  Artificial intelligence & Robotics:

@@ -235,7 +235,6 @@ I will explain the tecnologye I had use and the reason at ROJECT DEVELOPMENT sec
 " Self contained process that provides a unique business capability"
 https://www.youtube.com/watch?v=PY9xSykods4
 
-"The term "Microservice Architecture" has sprung up over the last few years to describe a particular way of designing software applications as suites of independently deployable services. While there is no precise definition of this architectural style, there are certain common characteristics around organization around business capability, automated deployment, intelligence in the endpoints, and decentralized control of languages and data." Martin
 
 
 "... the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. 
@@ -548,6 +547,26 @@ Logs interaction table:
 ### Funcionality
 
 ## Reflections
+
+(WHAT ARE THE NEXT STEPS)
+
+* Talck abput implementing security
+* Talck about adding testing
+* Monitoring, my propousals:
+	* Monitoring elastic search with kibana
+	* Monitoring kafka with Cofluents
+	
+* Analitics for analaising the interactions.
+* 
+
+(What can be improve on the system)
+
+When I desing the database, I wanted to find the best way to save the Logs and the knowlagment in one database using one tecnologye. During all thes proses I had been improving my understending of database and know I have a haier comprensation about database. 
+
+
+(TALK ABOUT HOW AGAIL WAS MY PROJECT)
+
+
 ## Conlutions
 Michroservice architecture. It will give to the sistem some advantagie instead of using the ros:
 

@@ -1,0 +1,1336 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\hypertarget{final-project}{%
+\section{Final Project}\label{final-project}}
+
+\hypertarget{introduction}{%
+\subsection{INTRODUCTION}\label{introduction}}
+
+The goal of this chapter is to provide context about the environment
+where this project has been developed. The first subsection will provide
+a general overview of the project, explaining the antecedents and the
+original idea.
+
+As the project has been developed in collaboration with a company, the
+second subsection will include some background information about the
+company, Everis
+
+The next part dives deeper into the structure of Everis, and will focus
+on NextGen, Everis innovation area. The fourth subsection will explain
+the structure of the Robotics/Augmented Workforce team, where I am
+currently working. We will finish this part explaining the current needs
+of the different projects in which my team is working, and how this
+project is able to help.
+
+\hypertarget{project-overview}{%
+\subsubsection{Project overview}\label{project-overview}}
+
+Robots are becoming increasingly present in everyday life, and are an
+active area of research, where the theoretical applications are almost
+infinite. However, the most interesting and powerful features, usually
+involve processing a real-time stream audio or video stream, in search
+of different patterns: such as words, objects, faces, movements\ldots{}
+and then use machine-learning to generate a customised response, while
+having several other threads running. This requires a high computing
+power, and processing and storing big quantities of data.
+
+As most of them do not have a significant computing power, this is a
+challenge that must be solved in order to improve the capabilities of
+current robots. There are several reasons for this hardware limitation.
+Sometimes, a better chip simply doesn't fit into the available physical
+space on the robot without changing the design, other times a customised
+chip would be needed, increasing vastly the costs of mass-production of
+the robots, and also sometimes it is caused by robot designers, who did
+not think on that possible use of the robot. There are, of course, some
+high-end robots whose hardware is not that constraining, but their
+prices are usually very high, so few consumers have access to them.
+
+That is why in my team came up with the idea of creating a server for
+the robot to connect, and send information about the state of the
+sensors and actuators. The server doesn't have the same hardware
+constrains, so it could compute them and send the processed data to the
+robot, so its role would only be performing the computed response.
+Furthermore, if instead of only a server, you use ``the cloud'', you can
+have as much computing power and storage as needed, with the only
+requirement of having internet access. This would also open the door to
+have different robots connected to the cloud, sharing a common
+``knowledge base'', and allowing application developers to invent brand
+new ways of exploiting this common information.
+
+The combination of different trending technologies such as big data,
+cloud computing, machine-learning and robotics can lead to a significant
+advance in the field. Let's imagine that a girl named Lisa, enters into
+a department store for the first time. At the entrance, she meets a
+robot, who learns her name and her face, and with the help of the
+wireless cameras and NFC sensors, analyses the behaviour of Lisa,
+learning about what she purchased and what she didn't. If any other day
+Lisa decides to go to another store of the same brand, their local robot
+already knows who she is, her interests last time, and a record of what
+she purchased in the past, so he can greet her ``Hey Lisa, do you
+remember the jacket you tried on your last visit? Today you can buy it
+with a -40\% discount!''.
+
+So this is where this project comes. The main goal is to generate a
+simple, yet scalable, proof of concept system which should allow robots
+to send data to process and receive a processed output, and allowing a
+second robot to access the knowledge generated by the first one. On the
+educational side, this project will allow me to investigate different
+technologies, and design the architecture of a complex cloud-based
+system, while allowing different robots to interact with it.
+
+\hypertarget{about-the-company}{%
+\subsubsection{About the company}\label{about-the-company}}
+
+Everis, an NTT Data Company, is a multinational consulting firm that
+offers business and strategic solutions, development and maintenance of
+technological applications and outsourcing services. The company has
+grown organically, in double digits and reported 1.03 billion Euro in
+turnover last year. It currently employs more than 20,000 professionals
+at its offices and high-performance centres, located in 16 countries.
+Its main operation areas are Western Europe and Latin America.
+
+The company was originally named DMR Consulting and was founded in Spain
+on October 1996, when a group of 5 entrepreneurs left their managerial
+positions at a leading consulting company to create a new concept of
+consulting. The idea was simple to explain, but complex to implement:
+building from scratch a unique company model designed to attract and
+retain the best talent, while fostering good people and collective
+values. Our talent management model, the main asset of Everis, is taught
+as a case study in leading business schools, as it excels in smartly
+feeding both the brain (skills and professional growth) and the heart
+(attitudes and values) of our employees. The result is summarised in our
+claim: attitude makes the difference.
+
+What Everis can do for companies:
+
+\begin{itemize}
+\item
+  Disruption, why go far if you can go further
+\item
+  Consulting, successful Digital projects with Everis
+\item
+  Transformation we define pragmatic and realistic initiatives, making
+  transformation happen.
+\item
+  Technology, we provide the best technology and enterprise solutions to
+  create new experiences.
+\item
+  Operations, Delivering quality and efficient Managed Services
+\end{itemize}
+
+\hypertarget{about-the-department}{%
+\subsubsection{About the department}\label{about-the-department}}
+
+\begin{figure}
+\centering
+\includegraphics{./tex2pdf.7640/3edbaf91ead157a8954e82891b116d0225798070.shtml}
+\caption{alt text}
+\end{figure}
+
+\begin{itemize}
+\item
+  Everis NEXT: A Big Data and Artificial Intelligence based system that
+  gathers the global information of disruptive startups, scouts
+  technologies and extracts market insights as well as the investment
+  strategies of main multinational companies.
+\item
+  Augmented workforce: Artificial intelligence \& Robotics: The main
+  goal of the team at Everis is to integrate the robots into the society
+  to generate a global benefit. Instead of focusing on the robot, the
+  main goal of the company is the relation between human-robot in order
+  to generate a smooth and friendly interaction.
+\item
+  CLOQQ: CLOQQ (acronym for ``Crea Lo Que Quieras'' in English ``Create
+  What You Want'') offers both face-to-face activities (workshops,
+  events, etc.) and a complete online and content environment for girls
+  and boys to create their own video games, apps, robots, animations and
+  much more. Watch video.
+\end{itemize}
+
+https://www.Everis.com/spain/es/news/newsroom/Everis-lanza-cloqq-una-iniciativa-para-que-ninos-y-ninas-se-diviertan-aprendiendo-0
+(12/11/2017)
+
+\begin{itemize}
+\tightlist
+\item
+  Everis INFINITE: Everis Infinite is a free software application from
+  the Office Suites \& Tools subcategory, part of the Business category.
+  The app is currently available in English and it was last updated on
+  2017-01-20. The program can be installed on iOS.
+  https://Everis-infinite-ios.soft112.com/ (12/11/2017)
+\end{itemize}
+
+\hypertarget{about-the-team}{%
+\subsubsection{About the team}\label{about-the-team}}
+
+(EXPLAIN MORE ABOUT THE PROJECTS THAT WE HAVE) Artificial intelligence
+\& Robotics: The main goal of the team at Everis is to integrate the
+robots into the society to generate a global benefit. Instead of
+focusing on the robot, the main goal of the company is the relation
+between human-robot in order to generate a smooth and friendly
+interaction.
+
+We have two areas of actuation: Business (non-industrial) where through
+introducing robots in companies the workers will feel more comfortable.
+Social focusing on using the robotics to improve the society. For
+example, people with disabilities, improve learning or robot partner.
+
+Robots that the team works with:
+
+Pepper
+
+Pepper is a robot from Aldebaran, a partner of Soft Bank Group. It is a
+humanoid robot that is 1,20 meters tall, and it is created to interact
+with it in different ways like having a vocal interaction, through its
+tablet, it has different sensors, etc.
+
+Jibo
+
+Tiago
+
+Nao
+
+Pleo and Casper project
+
+Sota
+
+\hypertarget{what-they-have}{%
+\subsubsection{What they have}\label{what-they-have}}
+
+Before I start the project, the company had a small Proof of Concept
+(PoC). This PoC is built around two docker containers:
+
+\begin{itemize}
+\item
+  One call streaming that.
+\item
+  Another one call skills where there where you can find different
+  skills for the robots to use. For example Delib (face recognition)
+  Affectiva (motion recognition), Brainr (learning by demonstration)
+\end{itemize}
+
+(ADD ESQUEMA ROS CLOWD) \#\#\#\#\# ROS Requirements
+
+\hypertarget{requisites}{%
+\subsubsection{Requisites}\label{requisites}}
+
+The system needs to be prepared for scalability in two ways:
+
+\begin{itemize}
+\item
+  The first one it refers the number of robots. We will be able to have
+  at least 1 robot at the beginning. But in about a year it is expect to
+  have connect in it around one million of robots. So, it is important
+  that there is no problem on adding robot very fast.
+\item
+  The second one it refers on the software side. The system need to be
+  able to add functionalities in a easy way. An example of functionality
+  may be face detection, Neurolinguistics programming, mapping, a new
+  behavior, etc.
+\end{itemize}
+
+Another challenge that the system needs to overcome is the fact of being
+multiplatform. It needs to be able to communicate with robots of many
+brands. On the other way also, it requires integrating behaviors and
+functionalities than can be code in multiple languages or run in a
+separate different OS.
+
+When you are talking about social robots it is important to mention real
+time interactions, that is the reason why the system needs to be able to
+have streaming communication.
+
+\hypertarget{propose-of-the-project}{%
+\subsubsection{Propose of the project}\label{propose-of-the-project}}
+
+(INSTEAD OF MENTIONING I SHOULD EXPLAIN THEM)
+
+Why SQL or NoSQL? Which can be a good database for saving the logs and
+all the knowledge?
+
+Which system, is ROS scalable enough, does it accomplish all our needs?
+
+Which type of Architecture is the best for the cloud system?
+
+\hypertarget{analysis-and-research}{%
+\subsection{Analysis and research}\label{analysis-and-research}}
+
+These section is about taking the needs of the project learning the
+theory that is related with it and research about which technologies can
+be use and which ones may work better.
+
+\hypertarget{big-picture-of-the-system.}{%
+\subsubsection{Big picture of the
+system.}\label{big-picture-of-the-system.}}
+
+( ESQUEMA SIN HABLAR DE TECNOLOGIAS SOLO CON ELEMENTOS )
+
+\hypertarget{database}{%
+\subsubsection{Database}\label{database}}
+
+(BREIEF INTRODUCCION)
+
+\hypertarget{cap-theorem}{%
+\subparagraph{CAP Theorem}\label{cap-theorem}}
+
+Also known as Brewer's theorem states that distributed databases cannot
+have consistency Availability and Partition Tolerance all at the same
+time.
+
+\begin{itemize}
+\item
+  Consistency: consistent copies of data on different servers.
+\item
+  Availability: refers to providing a response to any query
+\item
+  Partition Tolerance: means if a network that connects two or more
+  databases and if one servers fails, the servers will still be one
+  available with consistent data.
+\end{itemize}
+
+\hypertarget{relational-vs-nosql}{%
+\paragraph{Relational vs NoSQL}\label{relational-vs-nosql}}
+
+\hypertarget{limitations-of-relational-databases}{%
+\subparagraph{Limitations of Relational
+Databases}\label{limitations-of-relational-databases}}
+
+Nowadays the amount of data that needs to be stored and the processed
+has been increasing in big quantities, and with it new terms have come
+such as ``BIG DATA'', ``Internet of Things'' or ``Analytics''. The way
+of supporting large numbers of users from companies like Google,
+Facebook, Amazon, etc. change the way of managing data than smaller
+numbers of business users.
+
+Web applications serving tens of thousands or more users were difficult
+to implement with relational databases. Four characteristics of data
+management systems that are particularly important for large-scale data
+management tasks are:
+
+\begin{itemize}
+\item
+  Scalability: The way to scale the amount of that in the pass was by
+  Scale up (upgraded with more CPUs, additional memory, or faster
+  storage devices). Scaling up is always a cost concern, and you always
+  are restricted for the hardware capacity. Another option is to use
+  multiple servers but managing a relational DB using different servers
+  increase the complexity and the difficulty.
+\item
+  Cost: Upgrading with better hardware always have a huge impact of cost
+  ??????
+\item
+  Flexibility:
+\item
+  Availability: Being able to querying is one of the big problems when
+  you have millions of users accessing the information at almost the
+  same time from anywhere in the world. We need to ensure that the
+  database has a way to ensure that the data when there are
+  infrastructure problems, or system errors. With Relational Databases
+  is not an easy problem to solve, it can become a very complicated
+  problem when maximizes the availability is needed.
+\end{itemize}
+
+\hypertarget{nosql}{%
+\subparagraph{NoSQL}\label{nosql}}
+
+The idea of the NoSQL database is to solve the problems that the typical
+relational database has. A good definition for a NoSQL is a variety of
+different database technologies that are being non-relational as we
+mentioned before that is one of the problems that we are having with
+very large amount of Data, it is also distributed meaning that they can
+be inculcate to multiple processors. Another characteristic of the NoSQL
+is that they have to be horizontally scalable, that means that we can
+increase the number of the nodes, and not having to scale vertically,
+increase the size of the node.
+
+!!DRAW OF VERTICAL AN HORITZONTAL scaling.
+
+When we talk about big data we have 4 dimensions or the 4 V:
+
+\begin{itemize}
+\item
+  Volume: It refers the amount of data. We have many sources that the
+  data can be generated form. For example: Logs, sensors, social media,
+  speech, events, etc.
+\item
+  Variety: It refers the types of data that we can have. It can be
+  structured, semi-structured or unstructured. The data can come from
+  two main sources: people who create the data and or machines. In the
+  case of the people it is going to be more structure. And in the case
+  of machines it depends.
+\item
+  Veracity: How truthy is the data. In some cases, we can have untrusted
+  data, for example if you have a node replicated many times and the
+  data it is not consistent between them.
+\item
+  Velocity: The velocity that we need to process the data either the
+  speed of generating (and saving) the data and the read of analysis.\\
+  https://bicorner.com/2015/06/25/characteristics-that-make-big-data-big/
+  (1/12/2017)
+\end{itemize}
+
+\hypertarget{types-of-nosql}{%
+\subparagraph{Types of NoSQL}\label{types-of-nosql}}
+
+\begin{itemize}
+\tightlist
+\item
+  Column Families:
+\end{itemize}
+
+These types of Database are designed to manage big amount of data
+distributed on multiple servers in a cluster. If you only have one
+server probably these type of data is not what you need.
+
+EXPLAIN HOW IT WORKS
+
+\begin{itemize}
+\tightlist
+\item
+  Document Store
+\end{itemize}
+
+A document store allows the inserting, retrieving, and manipulating of
+semi-structured data. Most of the databases available under this
+category use XML, JSON, with data access typically over HTTP protocol
+using RESTful API
+
+Document-oriented databases provide this flexibility---dynamic or
+changeable schema or even scheme less documents. Because of the
+limitless flexibility provided in this model, this is one of the more
+popular models implemented and used. Some of popular databases that
+provide document-oriented storage include:
+
+\begin{itemize}
+\tightlist
+\item
+  Key Value
+\end{itemize}
+
+When we talk about key value database we need to imagine an array that
+have constrains on the keys and the values. That king of array is what
+we call associative array. The advantages that you can have on a key
+value database over an associative array is the persistence of the data
+especially in long term storage.
+
+The idea of a key value is to be able to the fast access of the data,
+that is the reason why some key value stores only use memory to keep the
+data instead of saving it into the disk.
+
+It is good to implement these kinds of database when you need to use
+many times a data, so when we get it form the disk it saves the data to
+the cache in order to access it faster.
+
+\begin{itemize}
+\tightlist
+\item
+  Graph Databases
+\end{itemize}
+
+Graph Databases as its name suggest, is a database base on the
+mathematical element name graph. A graph consists on two parts, vertices
+and edges, where a Vertices represents thinks (it can be anything,
+cities, animals, stations, etc.) that have relationships with other
+thinks. On the other hand, edges are the links that connect vertices and
+represents its relationships. The relationships can be long or short
+term.
+
+\begin{itemize}
+\tightlist
+\item
+  Multimodal Databases
+\end{itemize}
+
+Sometimes one type of database it does not required all the
+characteristics of the system. Sometimes is good to combine the
+different models for a better performance. For example, when a user logs
+into the system it might need to access the data of the user many times,
+a good possibility for having better speed is to use a SQL database that
+needs to be done
+
+\hypertarget{table-of-competing-technologies}{%
+\paragraph{Table of competing
+technologies}\label{table-of-competing-technologies}}
+
+\begin{longtable}[]{@{}llcc@{}}
+\toprule
+\begin{minipage}[b]{0.13\columnwidth}\raggedright
+Tecnology\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
+type\strut
+\end{minipage} & \begin{minipage}[b]{0.30\columnwidth}\centering
+Advantage\strut
+\end{minipage} & \begin{minipage}[b]{0.30\columnwidth}\centering
+disadvantages\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+Apache Cassandra\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+column store\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+open source. Per to per architecture. Scheme free.\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+\$1600\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+MongoDB\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+document store\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+Schema less\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+\$12\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+ArangoDB\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+Multimodal Database\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+w\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+\$1\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+Hadoop\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+Colum store\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+Open source It can manage multiple nodes acros different servers working
+in parallel. It is good to manage large numbers of unstructured data. It
+is fault tolerance\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+Security: No data encryption. Limitations at the time to improve
+efficiency, reliability and integration\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+Couch DB\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+document store\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+w\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+w\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+Elastic\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+w\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+or Azure SQL Database\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\centering
+w\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+I will explain the technologies I had use and the reason at ROJECT
+DEVELOPMENT section
+
+\hypertarget{architecture}{%
+\subsubsection{Architecture}\label{architecture}}
+
+(SHORT INTRODUCCTION)
+
+\hypertarget{soa}{%
+\paragraph{SOA}\label{soa}}
+
+\hypertarget{microservices}{%
+\paragraph{Microservices}\label{microservices}}
+
+" Self-contained process that provides a unique business capability"
+https://www.youtube.com/watch?v=PY9xSykods4
+
+``\ldots{} the microservice architectural style is an approach to
+developing a single application as a suite of small services, each
+running in its own process and communicating with lightweight
+mechanisms, often an HTTP resource API. These services are built around
+business capabilities and independently deployable by fully automated
+deployment machinery.\\
+it is important to focus on single business capabilities.'' {[}The term
+``microservice'' was discussed at a workshop of software architects near
+Venice in May, 2011 to describe what the participants saw as a common
+architectural style that many of them had been recently exploring. In
+May 2012, the same group decided on ``microservices'' as the most
+appropriate name. James presented some of these ideas as a case study in
+March 2012 at 33rd Degree in Krakow in Microservices - Java, the Unix
+Way as did Fred George about the same time. Adrian Cockcroft at Netflix,
+describing this approach as ``fine grained SOA'' was pioneering the
+style at web scale as were many of the others mentioned in this article
+- Joe Walnes, Dan North, Evan Botcher and Graham Tackley.{]} x * almost
+stateless of the application
+
+IMPORTANT SETTINGS
+
+each group need to have our data model. make communication state less
+
+REAL EXAMPLES: * Amazon
+
+Advantages:
+
+\begin{itemize}
+\tightlist
+\item
+  It is easy to have small teams developing each capability
+\item
+  Incase that one service broke the others will keep working
+\end{itemize}
+
+\hypertarget{acid}{%
+\subparagraph{ACID:}\label{acid}}
+
+*Atomicity: A unit that cannot be further divided.
+
+*Consistency: Ensure the integration of data.
+
+*Isolation:
+
+*Durability:
+
+\hypertarget{base}{%
+\subparagraph{BASE:}\label{base}}
+
+*Basically:
+
+*Available:
+
+*Soft State:
+
+*Eventually Consistent:
+
+\hypertarget{project-development}{%
+\subsection{PROJECT DEVELOPMENT}\label{project-development}}
+
+\hypertarget{introduction-1}{%
+\subsubsection{Introduction}\label{introduction-1}}
+
+In this section It describes the research about which technologies that
+can be used to solve the database problem, and a comparison between them
+to find which ones can be the best. It is also to define the
+architecture of the system and which technologies that can be used to
+implement it.
+
+\hypertarget{technologies}{%
+\subsubsection{Technologies}\label{technologies}}
+
+\hypertarget{tecnologies-for-database}{%
+\paragraph{Tecnologies for Database}\label{tecnologies-for-database}}
+
+For crating a database I use Elasandrea, that is a conversion of
+Cassandra, an NoSql using the column family model, and Elastic search a
+search engine.
+
+\hypertarget{cassandra}{%
+\subparagraph{Cassandra:}\label{cassandra}}
+
+Apache Cassandra is open source, distributed data storage system that
+differs sharply from relational database management systems.
+
+Cassandra is a NoSQL using Column Store model. It has a primary language
+call CQL (Cassandra Query Language) that is use for communicating with
+the database.
+
+\begin{figure}
+\centering
+\includegraphics{./tex2pdf.7640/595570be93c99f9c498ee0b492997683ba024ba3.shtml}
+\caption{alt text}
+\end{figure}
+
+\hypertarget{the-history-of-cassandra}{%
+\subparagraph{The History of Cassandra}\label{the-history-of-cassandra}}
+
+Cassandra first started as an incubation project at Apache in January of
+2009. Shortly thereafter, the committers, led by Apache Cassandra
+Project Chair Jonathan Ellis, re-leased version 0.3 of Cassandra, and
+have steadily made minor releases since that time.
+
+Though as of this writing it has not yet reached a 1.0 release,
+Cassandra is being used in production by some of the biggest properties
+on the Web, including Facebook, Twitter, Cisco, Rackspace, Digg, Cloud
+kick, Reddit, and more. {[}book{]}
+
+Releases after graduation include:
+
+\begin{verbatim}
+0.6, released Apr 12 2010, added support for integrated caching, and Apache Hadoop MapReduce 
+0.7, released Jan 08 2011, added secondary indexes and online schema changes 
+0.8, released Jun 2 2011, added the Cassandra Query Language (CQL), self-tuning memtables, and support for zero-downtime upgrades 
+1.0, released Oct 17 2011, added integrated compression, leveled compaction, and improved read performance 
+1.1, released Apr 23 2012, added self-tuning caches, row-level isolation, and support for mixed ssd/spinning disk deployments 
+1.2, released Jan 2 2013, added clustering across virtual nodes, inter-node communication, atomic batches, and request tracing 
+2.0, released Sep 4 2013, added lightweight transactions (based on the Paxos consensus protocol), triggers, improved compactions, CQL paging support, prepared statement support, SELECT column alias support 
+\end{verbatim}
+
+\hypertarget{why-cassandra}{%
+\subparagraph{Why Cassandra}\label{why-cassandra}}
+
+\begin{itemize}
+\item
+  Scalability: In the system is very important to design for a
+  scalability because the company could decide to add hundreds of new
+  robots over a short period of time. So, Cassandra is prepared to have
+  a high scalability performance.
+\item
+  Write Speed: It is important that when the system want to save new
+  information it does fast because there may be vast amounts of
+  information to save. One of the examples that needs to be fast is when
+  you save all the interaction information as a log.
+\item
+  It provides high availability:
+\item
+  Designed to manage very large amounts of structured data like logs.
+\item
+  Peer-to-peer distribution model.
+\item
+  The gossiper is a protocol communication (to support decentralization
+  and partition tolerance) responsible for making sure every node in the
+  system eventually knows important information about every other node's
+  state, including those that are unreachable or not yet in the cluster
+  when any given state change occurs.
+\item
+  It has Antientropic, it is a synchronization mechanism that consist in
+  comparing all the replicas of each piece of data that exist (or are
+  supposed to) and updating each replica to the newest version.
+\item
+  It uses CQL (Cassandra Query Language), it is a subset of SQL and its
+  easy for someone coming from SQL to learn.\\
+  \#\#\#\#\# Requirements
+\item
+  minimum 2 cores, recommended 8 or more cores.
+\item
+  minimum 8GB of RAM, recommended 32GB of RAM.
+\item
+  Java 8
+\item
+  Python 2.7
+\end{itemize}
+
+\hypertarget{elasticsearch}{%
+\paragraph{Elasticsearch}\label{elasticsearch}}
+
+Elasticsearch is a search engine base on RESTful, that have two main
+functions: it can be used as an analytic framework and datastore as
+well.
+
+It can be used for several cases:\\
+* As a Text Search. * Event Data and Metrics. * Visualizing Data. *
+Scraping and Combining Public Data. * Logging and Log Analysis.
+
+(HERE I HAVE TO EXPLAIN THAT IS DOCUMENT BASE)
+
+\hypertarget{history}{%
+\subparagraph{History}\label{history}}
+
+Elasticsearch had the first version released for Shay Banon in Febrary
+2010. Shay Banon had a scalability issue with Compass and he decide to
+rewrite and used a common interface, JSON over HTTP, suitable for
+programming languages other than Java as well.
+
+\hypertarget{why-elasticsearch}{%
+\subparagraph{Why Elasticsearch}\label{why-elasticsearch}}
+
+One of the advantages of Elasticsearch is that you can create a client
+made of any language as the answer is a JSON object. The main advantages
+of these protocol are:
+
+\begin{itemize}
+\item
+  Portability: It use web standards so it can be implemented in many
+  languages such as Java, Python, Ruby, c\#, etc., or called form
+  command lines applications such as curl.
+\item
+  Durability:
+\item
+  Simple to use:
+\item
+  Speed: It can compute complex queries in a short amount of time.
+\item
+  High support: A lot of plugins uses a REST endpoint on HTTP.
+\item
+  Scalability: Is the same to talk to Elasticsearch running on a single
+  node than hundreds of them. It scales horizontally to handle billions
+  of events per second, while automatically managing how indices and
+  queries are distributed across the cluster for oh-so smooth
+  operations.
+\item
+  Security: Elasticsearch out of the box it does not have enough
+  security control. It use HTTP authentication. But as I mention before
+  there are lots of plugins, for example Search Guard is a free plugin
+  that you can find role-based access control, document level security
+  and SSL/TLS encrypted node-to-node communication. You can also find
+  other plugins for security.
+\item
+  It has a big community that maintain and use it. That can be really
+  useful at the time to solve problems or learn how to use it. Another
+  reason is because the community apart official rivers that support the
+  most use programming languages.
+\item
+  Resilient, Highly Available
+\end{itemize}
+
+\hypertarget{requirements}{%
+\subparagraph{Requirements}\label{requirements}}
+
+\begin{itemize}
+\tightlist
+\item
+  Java 8
+\item
+  curl
+\end{itemize}
+
+\hypertarget{elassandra-elasticsearch-cassandra}{%
+\paragraph{Elassandra = Elasticsearch +
+Cassandra}\label{elassandra-elasticsearch-cassandra}}
+
+``Elassandra is a fork of Elasticsearch modified to run as a plugin for
+Apache Cassandra in a scalable and resilient peer-to-peer architecture.
+Elasticsearch code is embedded in Cassandra nodes providing advanced
+search features on Cassandra tables and Cassandra serve as an
+Elasticsearch data and configuration store.''
+
+https://github.com/strapdata/elassandra
+
+\includegraphics{./tex2pdf.7640/0a7e96de27bbfb38b7ecd804c4760fba3f1f5275.shtml}
+https://github.com/strapdata/elassandra
+
+\hypertarget{history-1}{%
+\subparagraph{History}\label{history-1}}
+
+\hypertarget{characteristics}{%
+\subparagraph{Characteristics}\label{characteristics}}
+
+\hypertarget{why-elassandra}{%
+\subparagraph{Why Elassandra}\label{why-elassandra}}
+
+\begin{itemize}
+\tightlist
+\item
+  It have an enterprise version, Strapdata
+\item
+  An Elasticsearch index is mapped to a cassandra keyspace, and a
+  document type to a cassandra table.
+\item
+  Docker
+\item
+  Durability
+\item
+  CQL (Common Query Language): it is possible to perform CQL queries to
+  .
+\item
+  It is possible to use the plugins of Elasticsearch.
+\item
+  Definitely it has the advantages of Elasticsearch and cassandra all
+  together.
+\end{itemize}
+
+\hypertarget{requirements-1}{%
+\subparagraph{Requirements}\label{requirements-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Java 8
+\end{itemize}
+
+\hypertarget{technologies-for-the-architecture}{%
+\subsubsection{Technologies for the
+architecture}\label{technologies-for-the-architecture}}
+
+\hypertarget{docker}{%
+\paragraph{Docker}\label{docker}}
+
+Docker is a container technology that is create \#\#\#\#\# History
+\#\#\#\#\# Characteristics \#\#\#\#\# Why Docker
+
+\begin{itemize}
+\item
+  Portability: Everything required to run the application is packaged
+  into a standardized container which means your applications are no
+  longer restrained to certain infrastructure requirements. Applications
+  can move across multiple environments, development stages, and cloud
+  environments - consistently.
+\item
+  Increase security: The Docker EE platform provides you with all the
+  tools and capabilities you need to run containers securely at scale.
+  With services like security scanning and container signing, Docker EE
+  enables you to protect all app components from the source, across the
+  network, and to different collaborators and environments with
+  guarantees against tampering.
+\item
+  Efficiency: By containerizing your legacy application on Docker
+  Enterprise Edition (EE), you reduce the total resource requirements to
+  run your application. This increases operational efficiency and allows
+  you to consolidate your infrastructure.
+\item
+  Enterprise version (EE) and community version (CE) \#\#\#\#\#
+  Requirements
+\item
+  Available for: Mac, Windows, Debian, Ubuntu, CentOS, Azure and AWS.
+\end{itemize}
+
+Depending of the OS. To install Docker CE in Ubuntu, you
+
+\begin{itemize}
+\tightlist
+\item
+  64-bit version o
+\item
+  Ubuntu versions: Artful 17.10 (Docker CE 17.11 Edge only), Zesty
+  17.04, Xenial 16.04 (LTS), Trusty 14.04 (LTS),
+\item
+  Ubuntu on x86\_64, armhf, and s390x (IBM z Systems) architectures.
+\end{itemize}
+
+\hypertarget{kafka}{%
+\paragraph{Kafka}\label{kafka}}
+
+\includegraphics{./tex2pdf.7640/21f0ca1de70d48cee774b613334768a53f8a95bc.shtml}
+\#\#\#\#\# History\\
+\#\#\#\#\# Why kafka \#\#\#\#\# Requirements * Need to have ZooKeeper
+install and started. * For ZooKeeper it is need: Supported Platforms *
+GNU/Linux. * Sun Solaris. * FreeBSD. * Win32. * MacOSX. JDK 6 or
+greater. *
+
+\hypertarget{schedule}{%
+\subsubsection{Schedule}\label{schedule}}
+
+A Gantt diagram
+
+\hypertarget{analyzing-ros-ros-architecture.}{%
+\subsubsection{Analyzing ros ROS
+architecture.}\label{analyzing-ros-ros-architecture.}}
+
+different modules explanation.
+
+\begin{itemize}
+\item
+  Robot framework: I it is lines of code that are running inside the
+  robot and it finality it is for establishing the connection between
+  the robot and the server.
+\item
+  Streaming docker: these block the only things that does is receiving
+  the streaming of one camera and save it in a shared memory.
+\item
+  Skills docker: In these modules there is all the skills and behaviors
+  that the robot could have. It reads the shared memory to get the
+  images from the robot. It sends what the robot has to do.
+\end{itemize}
+
+It only receives one camera at the time.
+
+Every time you want to add a different for the first time: * Create the
+robot framework. * Redo some of the skills in order to accept and adapt
+the robot.
+
+Every time you want to add a new skill:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  stop all the system
+\item
+  Change the docker file to add the new file
+\item
+  Rebuild the docker.
+\item
+  Run the streaming Docker.
+\item
+  Inside the docker run the scrip that receive the streaming.
+\item
+  Run the skill Doker.
+\item
+  Inside the docker run the scrip of the skills that you want to use.
+\end{enumerate}
+
+As you can see that every time that it is need to add a new skill or
+even a little change to one of them, it is need to stop the hold state.
+
+Also, the fact it is not easy to add another camera. In order to do it
+is need to run a second streaming Docker and change the skills that are
+going to use both cameras.
+
+\hypertarget{solution}{%
+\subsection{Solution}\label{solution}}
+
+\hypertarget{architecture-design}{%
+\subsubsection{Architecture design}\label{architecture-design}}
+
+In order to accomplish the requirements for this project I decide to use
+microservice architecture. It will give to the system some advantage
+instead of using the ROS. To implement the architecture, I decide to use
+Kafka and Docker.
+
+\hypertarget{kafka-1}{%
+\paragraph{Kafka}\label{kafka-1}}
+
+\hypertarget{design-for-scalability}{%
+\paragraph{Design for scalability}\label{design-for-scalability}}
+
+\hypertarget{data-structure}{%
+\subsubsection{Data structure}\label{data-structure}}
+
+\begin{figure}
+\centering
+\includegraphics{./tex2pdf.7640/097c69286146b51c5547d5e691c8af617eaab987.shtml}
+\caption{alt text}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{./tex2pdf.7640/67e9638dfef5364f3d32ceccf541f2ce99ec3216.shtml}
+\caption{alt text}
+\end{figure}
+
+People table:
+
+\begin{verbatim}
+{ 
+        "pid" : "",       
+        "name" : { 
+            "first_name" : "", 
+            "last_name" : "" 
+        }, 
+        "personal_info" : { 
+            "age" : "", 
+            "telephone" : "", 
+            "email" : "" 
+        }, 
+        "last_seen" : { 
+        "time_seen" : "", 
+        "place_seen" : "" 
+    } 
+} 
+\end{verbatim}
+
+Robot table:
+
+\begin{verbatim}
+{ 
+    "rId" : "", 
+    "rType" : { 
+        "name" : "", 
+        "version" : "" 
+    }, 
+    "rOwner" : "" 
+} 
+\end{verbatim}
+
+Logs interaction table:
+
+\begin{verbatim}
+{ 
+    "id" : "", 
+    "where" : "", 
+        "network" : "", 
+        "place" : "" 
+    }, 
+    "when" : { 
+        "time" : "", 
+        "day" : "" 
+    }, 
+    "info" : { 
+    } 
+} 
+\end{verbatim}
+
+\hypertarget{functionality}{%
+\subsubsection{Functionality}\label{functionality}}
+
+\hypertarget{reflections}{%
+\subsection{Reflections}\label{reflections}}
+
+(WHAT ARE THE NEXT STEPS)
+
+\begin{itemize}
+\item
+  Talk about implementing security
+\item
+  Talk about adding testing
+\item
+  Monitoring, my proposals:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Monitoring elastic search with kibana
+  \item
+    Monitoring kafka with Cofluents
+  \end{itemize}
+\item
+  Analytics for annualizing the interactions.
+\item
+\end{itemize}
+
+(What can be improve on the system)
+
+When I design the database, I wanted to find the best way to save the
+Logs and the knowledge in one database using one technology. During all
+this process I had been improving my understanding of databases and now
+I have a better understanding about database design.
+
+(TALK ABOUT HOW AGAIL WAS MY PROJECT)
+
+\hypertarget{conclusions}{%
+\subsection{Conclusions}\label{conclusions}}
+
+Microservice architecture. It will give to the system some advantage
+instead of using the ROS:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  There are many technologies out of the box. I chose Kafka, and it is a
+  good technology because there are so many things already implemented.
+\item
+  Better performance of scalability. It is simple fast and easy to add
+  new services.
+\item
+  If one service falls the others ones can keep working.
+\end{enumerate}
+
+Benefits of kafka. * API connector for Cassandra and elastyc search and
+other databases. The ones I used they are maintained by confluent. * Big
+community. It is very helpful at the time to fine divers or solving
+problems. * It supports streaming communication. In our system it is
+important to have a real time communication as we are working with
+robots.\\
+* Confluent Control Center it is an out of a box tool for monitoring.\\
+* Ready for fault isolation (EXPLAIN MORE AND HOW IT DOES). * It
+supports REST.
+
+\hypertarget{section}{%
+\subsection{}\label{section}}
+
+\hypertarget{books}{%
+\subsubsection{Books}\label{books}}
+
+\begin{verbatim}
+author name 
+title of the publication (and the title of the article if it's a magazine or encyclopedia) 
+date of publication 
+the place of publication of a book 
+the publishing company of a book 
+the volume number of a magazine or printed encyclopedia 
+the page number(s) 
+\end{verbatim}
+
+NoSQL for Mere Mortals by Dan Sullivan. Published by Addison-Wesley on
+April 2015, First printing. Text printed in the United States on
+recycled paper at Edwards Brothers Malloy, Ann Arbor, Michigan.
+
+Cassandra: The Definitive Guide, by Eben Hewitt, Published by O'Reilly
+Media on November 2010, First Edition.
+
+Kafka: The Definitive Guide, Real-Time Data and Stream Processing at
+Scale, by Neha Narkhede, Gwen Shapira, and Todd Palino. Published by
+O'Reilly Media on July 2017: First Edition.
+
+The OpenCV Tutorials, Release 2.4.13.3, September 03, 2017 \#\#\# Webs
+http://blogs.mindsmapped.com/bigdatahadoop/hadoop-advantages-and-disadvantages/
+(1/10/2017)
+
+https://docs.mongodb.com/manual/ (1/10/2017)
+
+https://www.tutorialspoint.com/mongodb/mongodb\_advantages.htm
+(20/11/2012)
+
+https://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/
+(1/12/2017)
+
+https://www.rosehosting.com/blog/how-to-install-apache-cassandra-on-ubuntu-16-04/
+(23/10/2017)
+
+https://docs.datastax.com/en/cql/3.1/cql/cql\_intro\_c.html (17/10/2017)
+
+\hypertarget{elisandra-elasticsearch-cassandra}{%
+\subparagraph{Elisandra: Elasticsearch +
+Cassandra}\label{elisandra-elasticsearch-cassandra}}
+
+http://doc.elassandra.io/en/latest/installation.html (2/11/2017)
+
+https://github.com/strapdata/elassandra (2/11/2017)
+
+https://www.youtube.com/watch?v=0WuLZTvA3YM (2/11/2017)
+
+\hypertarget{elasticsearch-1}{%
+\subparagraph{Elasticsearch}\label{elasticsearch-1}}
+
+https://www.elastic.co/ (17/10/2017)
+
+https://www.3pillarglobal.com/insights/advantages-of-elastic-search
+(25/10/2017)
+https://apiumhub.com/tech-blog-barcelona/elastic-search-advantages-books/
+(11/12/2017)
+
+\hypertarget{cassandra-1}{%
+\subparagraph{Cassandra}\label{cassandra-1}}
+
+https://docs.datastax.com/en/cql/3.1/index.html (17/10/2017)
+
+\hypertarget{kafka-2}{%
+\subparagraph{Kafka}\label{kafka-2}}
+
+https://kafka.apache.org/documentation/ (10/12/2017)
+https://zookeeper.apache.org/doc/r3.1.2/zookeeperAdmin.html\#sc\_systemReq
+(11/12/2017)
+
+\hypertarget{appendix}{%
+\subsection{Appendix}\label{appendix}}
+
+\hypertarget{basic-concepts}{%
+\subsubsection{Basic concepts}\label{basic-concepts}}
+
+Cluster: a cluster can be a group node which can consist of computers,
+databases, or other technologies that work together closely
+
+Node: a single computer or database or technology in a system.
+
+Index:
+
+Type:
+
+Document:
+
+Shards and Replicas:
+
+\begin{itemize}
+\item
+  Container
+\item ~
+  \hypertarget{abbreviations}{%
+  \subsubsection{Abbreviations}\label{abbreviations}}
+\end{itemize}
+
+NoSQL - non-relational Structured Query Language
+
+DB - Database
+
+SW - Software
+
+HW - Hardware
+
+OS - Operating system
+
+//think about the reason behind choosing technologies such as
+documentation, maturity, and the other 3 things
+
+``Kafka Connect currently supports two modes of execution: standalone
+(single process) and distributed.
+
+In standalone mode all work is performed in a single process. This
+configuration is simpler to setup and get started with and may be useful
+in situations where only one worker makes sense (e.g.~collecting log
+files), but it does not benefit from some of the features of Kafka
+Connect such as fault tolerance. You can start a standalone process with
+the following command:
+
+1 \textgreater{} bin/connect-standalone.sh
+config/connect-standalone.properties connector1.properties
+{[}connector2.properties \ldots{}{]}
+
+" ¨ ´ " Distributed mode handles automatic balancing of work, allows you
+to scale up (or down) dynamically, and offers fault tolerance both in
+the active tasks and for configuration and offset commit data. Execution
+is very similar to standalone mode:
+
+1 \textgreater{} bin/connect-distributed.sh
+config/connect-distributed.properties"
+
+" The difference is in the class which is started and the configuration
+parameters which change how the Kafka Connect process decides where to
+store configurations, how to assign work, and where to store offsets and
+task statues. In the distributed mode, Kafka Connect stores the offsets,
+configs and task statuses in Kafka topics. It is recommended to manually
+create the topics for offset, configs and statuses in order to achieve
+the desired the number of partitions and replication factors. If the
+topics are not yet created when starting Kafka Connect, the topics will
+be auto created with default number of partitions and replication
+factor, which may not be best suited for its usage."
+
+Kafka Connect Elasticsearch:
+
+https://github.com/hannesstockner/kafka-connect-elasticsearch
+(1/12/2017)
+
+Prerequisites: * a Linux console or Apple OSX console (not tested on
+windows, but adaptable with little effort) * a Git client to fetch the
+project * Docker Compose * Apache Maven installed. * git clone
+https://github.com/hannesstockner/kafka-connect-elasticsearch
+kafka-connect-elasticsearch
+
+Kafka Connect Cassandra:
+
+https://github.com/jcustenborder/kafka-connect-cassandra (1/12/2017)
+
+\end{document}
